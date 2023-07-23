@@ -1,0 +1,442 @@
+INFO  2023-07-21 12:17:28,231 minitest.py _miniSetUp      340 =========Current case: test_01=========
+INFO  2023-07-21 12:17:28,232 minitest.py _miniSetUp      343 package info: E:.workspace.miniumcase.test.first_test, case info: FirstTest.test_01
+INFO  2023-07-21 12:17:28,235 basenative.py wrapper         24  call BaseNative.check_connection
+INFO  2023-07-21 12:17:28,237 basenative.py wrapper         28  call BaseNative.check_connection end
+INFO  2023-07-21 12:17:28,238 basenative.py wrapper         24  call BaseNative.back_to_miniprogram
+INFO  2023-07-21 12:17:28,242 basenative.py back_to_miniprogram 549 try back_to_miniprogram 3
+INFO  2023-07-21 12:17:28,249 basenative.py wrapper         28  call BaseNative.back_to_miniprogram end
+INFO  2023-07-21 12:17:28,251 app.py     relaunch        623 ReLaunch: /pages/account/mode
+DEBUG 2023-07-21 12:17:28,257 connection.py _safely_send    417 ASYNC_SEND > {"id":"8d1d3fe9-8bc2-497a-88dd-0417f8b8a640","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/account/mode"}]}}
+DEBUG 2023-07-21 12:17:28,349 connection.py _on_message     652 RECV < {"id":"8d1d3fe9-8bc2-497a-88dd-0417f8b8a640","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2023-07-21 12:17:28,351 connection.py _handle_async_msg 693 received async msg: 8d1d3fe9-8bc2-497a-88dd-0417f8b8a640
+DEBUG 2023-07-21 12:17:29,100 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":267,"path":"pages/account/mode","query":{},"openType":"reLaunch","__ts__":1689913049072},1689913049073]}}
+INFO  2023-07-21 12:17:29,102 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 267, 'path': 'pages/account/mode', 'query': {}, 'openType': 'reLaunch', '__ts__': 1689913049072}, 1689913049073]}
+INFO  2023-07-21 12:17:29,124 minitest.py capture         686 capture setup.png
+INFO  2023-07-21 12:17:29,126 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-21 12:17:29,128 connection.py _safely_send    417 SEND > {"id":"201416ad-0967-4f29-9a1c-4475d176e11e","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-21 12:17:29,490 connection.py _on_message     650 RECV < {"id":"201416ad-0967-4f29-9a1c-4475d176e11e","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAZ4AAALgCAIAAAAr3oZ0AAAAAXNSR0IArs4c6QAAIABJREFUeJzsvXuQJUd97/n9ZmZVnXP6dPc8uzUz0lhCgMRjZJDEtXHogsJG60CjG+s72BE85EV4vbuWI2wLJAgUG4HB/wgbJFgcexW7toW4FgbuGvneuxq49yLfBXsAYwvJaIwlEEYjocd0T89MT3efR1Vl5m//yKrTZ2Z6RjPSjPp0kz9GxedUZ2X9MivrV7988//+2xIAAJIiEjly5MjrgBlMG4HqL5EjR4689lkh2DmAROTIkSOvD+af7CuDoavORo4cOfLaZyUCMPxm5MiRI68Prr02opLIkSNHXvusgqGDDP4WOXLkyGue+Sf7qsEfUaJEibJuREEqJ45g5MiRI68Prrw2onLlIkeOHHkdsAJAULBs8yJHjhx5rT...
+INFO  2023-07-21 12:17:29,527 basenative.py wrapper         28  call IdeNative.screen_shot end
+INFO  2023-07-21 12:17:29,529 minitest.py _miniSetUp      393 =========case: test_01 start=========
+DEBUG 2023-07-21 12:17:31,531 page.py    wait_for        321 waitFor: 2.000619411468506 s
+INFO  2023-07-21 12:17:31,533 page.py    _get_elements_by_css 557 try to get elements: [class='btn_text']
+DEBUG 2023-07-21 12:17:31,535 connection.py _safely_send    417 SEND > {"id":"4837608d-70f9-40d6-b8a0-116039a91153","method":"Page.getElements","params":{"selector":"[class='btn_text']","pageId":267}}
+DEBUG 2023-07-21 12:17:31,541 connection.py _on_message     652 RECV < {"id":"4837608d-70f9-40d6-b8a0-116039a91153","result":{"elements":[{"elementId":"bb095fe8-21f8-4ff9-a351-0637e9caa471","tagName":"text"},{"elementId":"2e8ca7a3-03aa-4bc1-b517-7a765ef7bc30","tagName":"text"},{"elementId":"f80c2ab5-c568-4013-9df6-832e6f35ba5b","tagName":"text"}]}}
+INFO  2023-07-21 12:17:31,543 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D300>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D360>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99CF40>]
+DEBUG 2023-07-21 12:17:31,545 connection.py _safely_send    417 SEND > {"id":"457f776a-7642-4fcf-8026-e5f3597d8f34","method":"Element.tap","params":{"elementId":"bb095fe8-21f8-4ff9-a351-0637e9caa471","pageId":267}}
+DEBUG 2023-07-21 12:17:31,601 connection.py _on_message     652 RECV < {"id":"457f776a-7642-4fcf-8026-e5f3597d8f34","result":{}}
+DEBUG 2023-07-21 12:17:32,295 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":268,"path":"pages/assess/assessBaseInfo","query":{"mode":"1"},"openType":"navigateTo","__ts__":1689913052266},1689913052267]}}
+INFO  2023-07-21 12:17:32,297 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 268, 'path': 'pages/assess/assessBaseInfo', 'query': {'mode': '1'}, 'openType': 'navigateTo', '__ts__': 1689913052266}, 1689913052267]}
+DEBUG 2023-07-21 12:17:33,603 page.py    wait_for        321 waitFor: 2.0001332759857178 s
+DEBUG 2023-07-21 12:17:34,604 page.py    wait_for        321 waitFor: 1.0006890296936035 s
+INFO  2023-07-21 12:17:34,607 page.py    _get_elements_by_css 557 try to get elements: van-radio-group
+DEBUG 2023-07-21 12:17:34,608 connection.py _safely_send    417 SEND > {"id":"52828404-c3e2-4801-b838-01d63ff31716","method":"Page.getElements","params":{"selector":"van-radio-group","pageId":268}}
+DEBUG 2023-07-21 12:17:34,613 connection.py _on_message     652 RECV < {"id":"52828404-c3e2-4801-b838-01d63ff31716","result":{"elements":[{"elementId":"0c72f616-b6bb-411c-9e13-f3da1d422b1a","tagName":"van-radio-group","nodeId":"9856f5a9"}]}}
+INFO  2023-07-21 12:17:34,615 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99CD30>]
+INFO  2023-07-21 12:17:34,617 element.py _get_elements_by_css 474 try to get elements: van-radio
+DEBUG 2023-07-21 12:17:34,619 connection.py _safely_send    417 SEND > {"id":"ec3f3139-8e03-4e80-8a18-b2e90f862c3b","method":"Element.getElements","params":{"selector":"van-radio","elementId":"0c72f616-b6bb-411c-9e13-f3da1d422b1a","pageId":268,"nodeId":"9856f5a9"}}
+DEBUG 2023-07-21 12:17:34,624 connection.py _on_message     650 RECV < {"id":"ec3f3139-8e03-4e80-8a18-b2e90f862c3b","result":{"elements":[{"elementId":"533b1342-d1e4-4f51-94fd-1406d66cf7d6","tagName":"van-radio","nodeId":"9a5b5b42"},{"elementId":"775ffffa-22b9-4a69-812a-e9a5b59c3f8c","tagName":"van-radio","nodeId":"c1ad8e03"},{"elementId":"7a24163f-7491-46eb-a50c-6349c00a286b","tagName":"van-radio","nodeId":"c55f37a9"},{"elementId":"12da653e-bd8e-420a-a79c-fd88b75b5be0","tagName":"van-radio","nodeId":"ffa9837e"},{"elementId":"5ef450dd-27b1-45a9-81f4-0ad0e81950d9","tagName":...
+INFO  2023-07-21 12:17:34,626 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99CB50>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99CEB0>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D630>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99CEE0>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D210>]
+INFO  2023-07-21 12:17:34,628 element.py _get_elements_by_css 474 try to get elements: view
+DEBUG 2023-07-21 12:17:34,629 connection.py _safely_send    417 SEND > {"id":"957ad779-4db4-4f4a-bf6b-cad5c58dcaa7","method":"Element.getElements","params":{"selector":"view","elementId":"775ffffa-22b9-4a69-812a-e9a5b59c3f8c","pageId":268,"nodeId":"c1ad8e03"}}
+DEBUG 2023-07-21 12:17:34,634 connection.py _on_message     652 RECV < {"id":"957ad779-4db4-4f4a-bf6b-cad5c58dcaa7","result":{"elements":[{"elementId":"bbfad1e2-7603-469a-9f47-036dca3a2556","tagName":"view"},{"elementId":"8077e85c-b99e-4c76-a3da-e2651c35911a","tagName":"view"},{"elementId":"249a9365-675e-4dbf-a102-97d4b18b6e52","tagName":"view"},{"elementId":"4ea6816f-1483-4318-b66c-6cb598a69d13","tagName":"view"}]}}
+INFO  2023-07-21 12:17:34,636 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D2A0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D600>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99C910>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D180>]
+INFO  2023-07-21 12:17:34,638 element.py _get_elements_by_css 474 try to get elements: van-icon
+DEBUG 2023-07-21 12:17:34,639 connection.py _safely_send    417 SEND > {"id":"40b449c6-d996-4e6a-bffe-7610517bc201","method":"Element.getElements","params":{"selector":"van-icon","elementId":"bbfad1e2-7603-469a-9f47-036dca3a2556","pageId":268}}
+DEBUG 2023-07-21 12:17:34,643 connection.py _on_message     652 RECV < {"id":"40b449c6-d996-4e6a-bffe-7610517bc201","result":{"elements":[{"elementId":"832d3f82-cf92-4904-99e1-fd2f82654905","tagName":"van-icon","nodeId":"5a192f9d"}]}}
+INFO  2023-07-21 12:17:34,645 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D5A0>]
+INFO  2023-07-21 12:17:34,646 element.py _get_elements_by_css 474 try to get elements: view
+DEBUG 2023-07-21 12:17:34,648 connection.py _safely_send    417 SEND > {"id":"a8c1088f-383b-41e4-bd57-af1cce57291e","method":"Element.getElements","params":{"selector":"view","elementId":"832d3f82-cf92-4904-99e1-fd2f82654905","pageId":268,"nodeId":"5a192f9d"}}
+DEBUG 2023-07-21 12:17:34,651 connection.py _on_message     652 RECV < {"id":"a8c1088f-383b-41e4-bd57-af1cce57291e","result":{"elements":[{"elementId":"249a9365-675e-4dbf-a102-97d4b18b6e52","tagName":"view"}]}}
+INFO  2023-07-21 12:17:34,653 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D5D0>]
+DEBUG 2023-07-21 12:17:34,655 connection.py _safely_send    417 SEND > {"id":"e50c6949-20e8-49e5-a2dc-e26918f448ec","method":"Element.tap","params":{"elementId":"249a9365-675e-4dbf-a102-97d4b18b6e52","pageId":268}}
+DEBUG 2023-07-21 12:17:34,678 connection.py _on_message     652 RECV < {"id":"e50c6949-20e8-49e5-a2dc-e26918f448ec","result":{}}
+INFO  2023-07-21 12:17:34,682 page.py    _get_elements_by_css 557 try to get elements: van-tabs
+DEBUG 2023-07-21 12:17:34,690 connection.py _safely_send    417 SEND > {"id":"d759cc2f-77ac-47d9-a062-ca761661e44a","method":"Page.getElements","params":{"selector":"van-tabs","pageId":268}}
+DEBUG 2023-07-21 12:17:34,694 connection.py _on_message     652 RECV < {"id":"d759cc2f-77ac-47d9-a062-ca761661e44a","result":{"elements":[{"elementId":"026b6f32-968c-4119-9e7e-825af84b3818","tagName":"van-tabs","nodeId":"2b1505ac"}]}}
+INFO  2023-07-21 12:17:34,695 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D330>]
+INFO  2023-07-21 12:17:34,697 element.py _get_elements_by_css 474 try to get elements: van-sticky
+DEBUG 2023-07-21 12:17:34,700 connection.py _safely_send    417 SEND > {"id":"d4aaf212-5d9f-479a-a13e-6e6ca9249635","method":"Element.getElements","params":{"selector":"van-sticky","elementId":"026b6f32-968c-4119-9e7e-825af84b3818","pageId":268,"nodeId":"2b1505ac"}}
+DEBUG 2023-07-21 12:17:34,703 connection.py _on_message     652 RECV < {"id":"d4aaf212-5d9f-479a-a13e-6e6ca9249635","result":{"elements":[{"elementId":"3beeed4f-1b5c-4890-9326-f871e0c09f3e","tagName":"van-sticky","nodeId":"8dc10821"}]}}
+INFO  2023-07-21 12:17:34,705 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D2A0>]
+INFO  2023-07-21 12:17:34,706 element.py _get_elements_by_css 474 try to get elements: scroll-view
+DEBUG 2023-07-21 12:17:34,708 connection.py _safely_send    417 SEND > {"id":"8c20bead-2211-46d9-acb0-daaa6456fb65","method":"Element.getElements","params":{"selector":"scroll-view","elementId":"3beeed4f-1b5c-4890-9326-f871e0c09f3e","pageId":268,"nodeId":"8dc10821"}}
+DEBUG 2023-07-21 12:17:34,712 connection.py _on_message     652 RECV < {"id":"8c20bead-2211-46d9-acb0-daaa6456fb65","result":{"elements":[{"elementId":"43509824-64de-429a-a421-e0ea0272da5b","tagName":"scroll-view"}]}}
+INFO  2023-07-21 12:17:34,714 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.ViewElement object at 0x000002893F99CFA0>]
+INFO  2023-07-21 12:17:34,715 element.py _get_elements_by_css 474 try to get elements: view
+DEBUG 2023-07-21 12:17:34,717 connection.py _safely_send    417 SEND > {"id":"9114f4ca-34d7-42c5-ac3a-4232922a87a4","method":"Element.getElements","params":{"selector":"view","elementId":"43509824-64de-429a-a421-e0ea0272da5b","pageId":268}}
+DEBUG 2023-07-21 12:17:34,721 connection.py _on_message     650 RECV < {"id":"9114f4ca-34d7-42c5-ac3a-4232922a87a4","result":{"elements":[{"elementId":"905a963b-5b43-4e6c-86c8-981834e4a635","tagName":"view"},{"elementId":"86dbd878-2019-435a-b1fc-f9a9f4226912","tagName":"view"},{"elementId":"2f34d113-6c90-481f-bb1b-92eb19cac0c7","tagName":"view"},{"elementId":"435ac90a-033c-4c59-b028-822c9948c582","tagName":"view"},{"elementId":"00d7165e-f12a-4a9d-8142-97aa9bb51f94","tagName":"view"},{"elementId":"603ac285-74d3-4746-9658-f1a83c854d46","tagName":"view"},{"elementId":"9466b399...
+INFO  2023-07-21 12:17:34,722 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D120>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D630>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D570>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D600>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99CEE0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D2D0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99C7C0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D240>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D0F0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99C7F0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D270>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D150>]
+DEBUG 2023-07-21 12:17:34,724 connection.py _safely_send    417 SEND > {"id":"1ba8ca77-73f6-4e4d-89bb-6ef54eecd0c7","method":"Element.tap","params":{"elementId":"e90476d8-382b-4258-a37a-9d811c91bdc9","pageId":268}}
+DEBUG 2023-07-21 12:17:34,742 connection.py _on_message     652 RECV < {"id":"1ba8ca77-73f6-4e4d-89bb-6ef54eecd0c7","result":{}}
+INFO  2023-07-21 12:17:34,745 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:17:34,752 connection.py _safely_send    417 SEND > {"id":"fa4d20ea-a899-4436-86cd-9ec32f688e3f","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":268}}
+DEBUG 2023-07-21 12:17:35,130 connection.py _on_message     652 RECV < {"id":"fa4d20ea-a899-4436-86cd-9ec32f688e3f","result":{"elements":[{"elementId":"28b2a961-4007-4ea9-b49f-9376202135cc","tagName":"view"}]}}
+INFO  2023-07-21 12:17:35,132 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99C520>]
+DEBUG 2023-07-21 12:17:35,134 connection.py _safely_send    417 SEND > {"id":"1b0505b7-c1da-4f1f-bdaa-68291e0d731f","method":"Element.tap","params":{"elementId":"28b2a961-4007-4ea9-b49f-9376202135cc","pageId":268}}
+DEBUG 2023-07-21 12:17:35,183 connection.py _on_message     652 RECV < {"id":"1b0505b7-c1da-4f1f-bdaa-68291e0d731f","result":{}}
+DEBUG 2023-07-21 12:17:35,952 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":269,"path":"pages/assess/assessTotal","query":{"mode":"1","schemeId":"1","currentGender":"m"},"openType":"navigateTo","__ts__":1689913055920},1689913055921]}}
+INFO  2023-07-21 12:17:35,954 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 269, 'path': 'pages/assess/assessTotal', 'query': {'mode': '1', 'schemeId': '1', 'currentGender': 'm'}, 'openType': 'navigateTo', '__ts__': 1689913055920}, 1689913055921]}
+DEBUG 2023-07-21 12:17:36,189 page.py    wait_for        321 waitFor: 1.0034315586090088 s
+INFO  2023-07-21 12:17:36,192 page.py    _get_elements_by_css 557 try to get elements: [class='item_title']
+DEBUG 2023-07-21 12:17:36,200 connection.py _safely_send    417 SEND > {"id":"3bf15002-5ca2-48d2-8038-518f3f161b7e","method":"Page.getElements","params":{"selector":"[class='item_title']","pageId":269}}
+DEBUG 2023-07-21 12:17:36,251 connection.py _on_message     652 RECV < {"id":"3bf15002-5ca2-48d2-8038-518f3f161b7e","result":{"elements":[{"elementId":"985d8024-b423-42a9-a389-c909638e1650","tagName":"text"},{"elementId":"e65c314e-5e27-43b4-924e-e941e600b451","tagName":"text"},{"elementId":"e8b56991-8ef2-475b-b45e-cfcf7e84222d","tagName":"text"},{"elementId":"0c7396d0-b388-4fe2-8726-0e8864c7538a","tagName":"text"}]}}
+INFO  2023-07-21 12:17:36,253 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D120>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D540>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99C7C0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99CF40>]
+DEBUG 2023-07-21 12:17:36,255 connection.py _safely_send    417 SEND > {"id":"a57992ea-b571-4062-8df8-69fba4290c6d","method":"Element.tap","params":{"elementId":"985d8024-b423-42a9-a389-c909638e1650","pageId":269}}
+DEBUG 2023-07-21 12:17:36,300 connection.py _on_message     652 RECV < {"id":"a57992ea-b571-4062-8df8-69fba4290c6d","result":{}}
+DEBUG 2023-07-21 12:17:37,139 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":270,"path":"pages/assess/assessDetail","query":{"index":"0","schemeId":"1","currentGender":"m","mode":"1"},"openType":"navigateTo","__ts__":1689913057100},1689913057102]}}
+INFO  2023-07-21 12:17:37,141 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 270, 'path': 'pages/assess/assessDetail', 'query': {'index': '0', 'schemeId': '1', 'currentGender': 'm', 'mode': '1'}, 'openType': 'navigateTo', '__ts__': 1689913057100}, 1689913057102]}
+DEBUG 2023-07-21 12:17:38,305 page.py    wait_for        321 waitFor: 2.0002026557922363 s
+DEBUG 2023-07-21 12:17:41,306 page.py    wait_for        321 waitFor: 3.000056028366089 s
+INFO  2023-07-21 12:17:41,308 page.py    _get_elements_by_css 557 try to get elements: van-radio-group
+DEBUG 2023-07-21 12:17:41,309 connection.py _safely_send    417 SEND > {"id":"b6ab2c06-8159-4e25-a064-78fdf284dc87","method":"Page.getElements","params":{"selector":"van-radio-group","pageId":270}}
+DEBUG 2023-07-21 12:17:41,316 connection.py _on_message     650 RECV < {"id":"b6ab2c06-8159-4e25-a064-78fdf284dc87","result":{"elements":[{"elementId":"b1524d9d-4eb4-49dd-88a7-b09c5dcb4c2d","tagName":"van-radio-group","nodeId":"4f74940a"},{"elementId":"1711af1d-07ef-4b60-b1c2-8137523d19b5","tagName":"van-radio-group","nodeId":"2b0f051d"},{"elementId":"d46cf697-d7e4-4dcf-a057-20690c2a9441","tagName":"van-radio-group","nodeId":"a971246c"},{"elementId":"ff83ece7-8141-480c-b9eb-9aba737a8a39","tagName":"van-radio-group","nodeId":"aa3104e6"},{"elementId":"fc124331-bd80-4f2b-a300-...
+INFO  2023-07-21 12:17:41,318 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99CF40>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99C940>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99C520>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D210>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D1E0>]
+INFO  2023-07-21 12:17:41,320 page.py    _get_elements_by_css 557 try to get elements: van-radio-group
+DEBUG 2023-07-21 12:17:41,321 connection.py _safely_send    417 SEND > {"id":"87df3f72-08d2-47ed-83ba-2e2f738b3861","method":"Page.getElements","params":{"selector":"van-radio-group","pageId":270}}
+DEBUG 2023-07-21 12:17:41,328 connection.py _on_message     650 RECV < {"id":"87df3f72-08d2-47ed-83ba-2e2f738b3861","result":{"elements":[{"elementId":"b1524d9d-4eb4-49dd-88a7-b09c5dcb4c2d","tagName":"van-radio-group","nodeId":"4f74940a"},{"elementId":"1711af1d-07ef-4b60-b1c2-8137523d19b5","tagName":"van-radio-group","nodeId":"2b0f051d"},{"elementId":"d46cf697-d7e4-4dcf-a057-20690c2a9441","tagName":"van-radio-group","nodeId":"a971246c"},{"elementId":"ff83ece7-8141-480c-b9eb-9aba737a8a39","tagName":"van-radio-group","nodeId":"aa3104e6"},{"elementId":"fc124331-bd80-4f2b-a300-...
+INFO  2023-07-21 12:17:41,329 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D240>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99CEB0>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D600>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99CFA0>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99CD30>]
+INFO  2023-07-21 12:17:41,331 element.py _get_elements_by_css 474 try to get elements: van-radio
+DEBUG 2023-07-21 12:17:41,332 connection.py _safely_send    417 SEND > {"id":"f7cc2b03-ec53-4457-9cc2-b2ca7a79dd65","method":"Element.getElements","params":{"selector":"van-radio","elementId":"b1524d9d-4eb4-49dd-88a7-b09c5dcb4c2d","pageId":270,"nodeId":"4f74940a"}}
+DEBUG 2023-07-21 12:17:41,337 connection.py _on_message     652 RECV < {"id":"f7cc2b03-ec53-4457-9cc2-b2ca7a79dd65","result":{"elements":[{"elementId":"929f2381-cd9c-49ac-8a4e-a78369b48c40","tagName":"van-radio","nodeId":"9a98ea21"},{"elementId":"331df74b-7e58-4a49-b7a0-39ccae195b96","tagName":"van-radio","nodeId":"f2f2fe7e"}]}}
+INFO  2023-07-21 12:17:41,339 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D330>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99C910>]
+INFO  2023-07-21 12:17:41,340 element.py _get_elements_by_css 474 try to get elements: view
+DEBUG 2023-07-21 12:17:41,341 connection.py _safely_send    417 SEND > {"id":"ad968a58-a693-47a1-b827-99f5eda86e1a","method":"Element.getElements","params":{"selector":"view","elementId":"331df74b-7e58-4a49-b7a0-39ccae195b96","pageId":270,"nodeId":"f2f2fe7e"}}
+DEBUG 2023-07-21 12:17:41,347 connection.py _on_message     652 RECV < {"id":"ad968a58-a693-47a1-b827-99f5eda86e1a","result":{"elements":[{"elementId":"45362cdc-da84-4d95-8a84-87451a9a8fc2","tagName":"view"},{"elementId":"9b9de355-176b-4a62-9b1d-921ec038cf70","tagName":"view"},{"elementId":"376bfbb3-f8a3-4815-8fdc-6a217b7694a9","tagName":"view"},{"elementId":"fa78da66-3c79-42d7-8539-ff51d128614d","tagName":"view"}]}}
+INFO  2023-07-21 12:17:41,349 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99CB50>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99C7C0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D180>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99C520>]
+INFO  2023-07-21 12:17:41,350 element.py _get_elements_by_css 474 try to get elements: van-icon
+DEBUG 2023-07-21 12:17:41,351 connection.py _safely_send    417 SEND > {"id":"6639b330-486a-4786-ae6e-ff3c52ad7f1f","method":"Element.getElements","params":{"selector":"van-icon","elementId":"45362cdc-da84-4d95-8a84-87451a9a8fc2","pageId":270}}
+DEBUG 2023-07-21 12:17:41,356 connection.py _on_message     652 RECV < {"id":"6639b330-486a-4786-ae6e-ff3c52ad7f1f","result":{"elements":[{"elementId":"31357f7e-caaf-4c00-8612-73b11ce40a8d","tagName":"van-icon","nodeId":"571baa11"}]}}
+INFO  2023-07-21 12:17:41,358 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D120>]
+INFO  2023-07-21 12:17:41,359 element.py _get_elements_by_css 474 try to get elements: view
+DEBUG 2023-07-21 12:17:41,361 connection.py _safely_send    417 SEND > {"id":"1f6bfb4f-8e49-46e9-957a-6a7b3ece5d4a","method":"Element.getElements","params":{"selector":"view","elementId":"31357f7e-caaf-4c00-8612-73b11ce40a8d","pageId":270,"nodeId":"571baa11"}}
+DEBUG 2023-07-21 12:17:41,365 connection.py _on_message     652 RECV < {"id":"1f6bfb4f-8e49-46e9-957a-6a7b3ece5d4a","result":{"elements":[{"elementId":"376bfbb3-f8a3-4815-8fdc-6a217b7694a9","tagName":"view"}]}}
+INFO  2023-07-21 12:17:41,366 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D540>]
+DEBUG 2023-07-21 12:17:41,368 connection.py _safely_send    417 SEND > {"id":"1b146f16-c248-476a-92d6-7e6a46d4292b","method":"Element.tap","params":{"elementId":"376bfbb3-f8a3-4815-8fdc-6a217b7694a9","pageId":270}}
+DEBUG 2023-07-21 12:17:41,446 connection.py _on_message     652 RECV < {"id":"1b146f16-c248-476a-92d6-7e6a46d4292b","result":{}}
+INFO  2023-07-21 12:17:41,449 page.py    _get_elements_by_css 557 try to get elements: van-radio-group
+DEBUG 2023-07-21 12:17:41,450 connection.py _safely_send    417 SEND > {"id":"54a51e91-c4b5-43be-9147-873ae5de2cb9","method":"Page.getElements","params":{"selector":"van-radio-group","pageId":270}}
+DEBUG 2023-07-21 12:17:41,508 connection.py _on_message     650 RECV < {"id":"54a51e91-c4b5-43be-9147-873ae5de2cb9","result":{"elements":[{"elementId":"b1524d9d-4eb4-49dd-88a7-b09c5dcb4c2d","tagName":"van-radio-group","nodeId":"4f74940a"},{"elementId":"1711af1d-07ef-4b60-b1c2-8137523d19b5","tagName":"van-radio-group","nodeId":"2b0f051d"},{"elementId":"d46cf697-d7e4-4dcf-a057-20690c2a9441","tagName":"van-radio-group","nodeId":"a971246c"},{"elementId":"ff83ece7-8141-480c-b9eb-9aba737a8a39","tagName":"van-radio-group","nodeId":"aa3104e6"},{"elementId":"fc124331-bd80-4f2b-a300-...
+INFO  2023-07-21 12:17:41,512 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99C7F0>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D450>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D390>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D240>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D270>]
+INFO  2023-07-21 12:17:41,514 element.py _get_elements_by_css 474 try to get elements: van-radio
+DEBUG 2023-07-21 12:17:41,516 connection.py _safely_send    417 SEND > {"id":"04dec406-c9a6-4258-a416-e40ed56b3911","method":"Element.getElements","params":{"selector":"van-radio","elementId":"1711af1d-07ef-4b60-b1c2-8137523d19b5","pageId":270,"nodeId":"2b0f051d"}}
+DEBUG 2023-07-21 12:17:41,523 connection.py _on_message     652 RECV < {"id":"04dec406-c9a6-4258-a416-e40ed56b3911","result":{"elements":[{"elementId":"85623cf6-09d8-4a02-a3d9-5364ffc00c14","tagName":"van-radio","nodeId":"e2674dfc"},{"elementId":"a10800e4-b7c1-4dc4-b352-8174119d5b12","tagName":"van-radio","nodeId":"8a6b8efa"}]}}
+INFO  2023-07-21 12:17:41,525 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99CB50>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99C520>]
+INFO  2023-07-21 12:17:41,527 element.py _get_elements_by_css 474 try to get elements: view
+DEBUG 2023-07-21 12:17:41,528 connection.py _safely_send    417 SEND > {"id":"980b4eb6-9f4d-41e5-a291-b4ab0ac8352e","method":"Element.getElements","params":{"selector":"view","elementId":"a10800e4-b7c1-4dc4-b352-8174119d5b12","pageId":270,"nodeId":"8a6b8efa"}}
+DEBUG 2023-07-21 12:17:41,537 connection.py _on_message     652 RECV < {"id":"980b4eb6-9f4d-41e5-a291-b4ab0ac8352e","result":{"elements":[{"elementId":"578dd222-551b-457b-9e11-2dbb6fd82864","tagName":"view"},{"elementId":"dd9bdbf1-8988-4f07-8722-134813c2bff1","tagName":"view"},{"elementId":"a8db08fe-6a31-4841-bb11-dd16e64707b9","tagName":"view"},{"elementId":"4981f9df-0359-4a7a-93f8-3a77f2250d79","tagName":"view"}]}}
+INFO  2023-07-21 12:17:41,539 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99CEB0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D150>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D0F0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D1E0>]
+INFO  2023-07-21 12:17:41,540 element.py _get_elements_by_css 474 try to get elements: van-icon
+DEBUG 2023-07-21 12:17:41,541 connection.py _safely_send    417 SEND > {"id":"c09aac97-ddaa-46a9-a9ac-65512663a88a","method":"Element.getElements","params":{"selector":"van-icon","elementId":"578dd222-551b-457b-9e11-2dbb6fd82864","pageId":270}}
+DEBUG 2023-07-21 12:17:41,546 connection.py _on_message     652 RECV < {"id":"c09aac97-ddaa-46a9-a9ac-65512663a88a","result":{"elements":[{"elementId":"739e83fe-bc4b-488f-9d88-1e22851edfb8","tagName":"van-icon","nodeId":"15217d80"}]}}
+INFO  2023-07-21 12:17:41,550 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D360>]
+INFO  2023-07-21 12:17:41,551 element.py _get_elements_by_css 474 try to get elements: view
+DEBUG 2023-07-21 12:17:41,552 connection.py _safely_send    417 SEND > {"id":"a38bff74-2307-4005-ac2a-61aa1c9c3fab","method":"Element.getElements","params":{"selector":"view","elementId":"739e83fe-bc4b-488f-9d88-1e22851edfb8","pageId":270,"nodeId":"15217d80"}}
+DEBUG 2023-07-21 12:17:41,557 connection.py _on_message     652 RECV < {"id":"a38bff74-2307-4005-ac2a-61aa1c9c3fab","result":{"elements":[{"elementId":"a8db08fe-6a31-4841-bb11-dd16e64707b9","tagName":"view"}]}}
+INFO  2023-07-21 12:17:41,558 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99CF40>]
+DEBUG 2023-07-21 12:17:41,561 connection.py _safely_send    417 SEND > {"id":"9f50c8f6-c7f1-4bc1-9b50-62e2f22634d3","method":"Element.tap","params":{"elementId":"a8db08fe-6a31-4841-bb11-dd16e64707b9","pageId":270}}
+DEBUG 2023-07-21 12:17:41,660 connection.py _on_message     652 RECV < {"id":"9f50c8f6-c7f1-4bc1-9b50-62e2f22634d3","result":{}}
+INFO  2023-07-21 12:17:41,663 page.py    _get_elements_by_css 557 try to get elements: van-radio-group
+DEBUG 2023-07-21 12:17:41,664 connection.py _safely_send    417 SEND > {"id":"657c2001-6aaf-42cb-b61c-5a2b338ac31a","method":"Page.getElements","params":{"selector":"van-radio-group","pageId":270}}
+DEBUG 2023-07-21 12:17:41,733 connection.py _on_message     650 RECV < {"id":"657c2001-6aaf-42cb-b61c-5a2b338ac31a","result":{"elements":[{"elementId":"b1524d9d-4eb4-49dd-88a7-b09c5dcb4c2d","tagName":"van-radio-group","nodeId":"4f74940a"},{"elementId":"1711af1d-07ef-4b60-b1c2-8137523d19b5","tagName":"van-radio-group","nodeId":"2b0f051d"},{"elementId":"d46cf697-d7e4-4dcf-a057-20690c2a9441","tagName":"van-radio-group","nodeId":"a971246c"},{"elementId":"ff83ece7-8141-480c-b9eb-9aba737a8a39","tagName":"van-radio-group","nodeId":"aa3104e6"},{"elementId":"fc124331-bd80-4f2b-a300-...
+INFO  2023-07-21 12:17:41,739 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99CFA0>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99CD30>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D180>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D450>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99C940>]
+INFO  2023-07-21 12:17:41,741 element.py _get_elements_by_css 474 try to get elements: van-radio
+DEBUG 2023-07-21 12:17:41,742 connection.py _safely_send    417 SEND > {"id":"71196c35-360b-4065-bdde-81fcf8fec658","method":"Element.getElements","params":{"selector":"van-radio","elementId":"d46cf697-d7e4-4dcf-a057-20690c2a9441","pageId":270,"nodeId":"a971246c"}}
+DEBUG 2023-07-21 12:17:41,747 connection.py _on_message     650 RECV < {"id":"71196c35-360b-4065-bdde-81fcf8fec658","result":{"elements":[{"elementId":"d0e98840-075d-4805-993d-b01c3bceb081","tagName":"van-radio","nodeId":"0fc0f34d"},{"elementId":"b6ecc829-46e5-47b2-8bb1-8e0d41089dbb","tagName":"van-radio","nodeId":"71572bb5"},{"elementId":"efe0825a-0e12-4d49-906b-a60bba872121","tagName":"van-radio","nodeId":"41cf63e2"},{"elementId":"545a49b2-21d5-4da4-919a-3ef4084b4196","tagName":"van-radio","nodeId":"e6611ba5"},{"elementId":"fff1e9ec-a4e6-462e-91f0-b94aaf2dc08a","tagName":...
+INFO  2023-07-21 12:17:41,752 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99CEB0>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D1E0>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D150>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99C910>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D540>]
+INFO  2023-07-21 12:17:41,755 element.py _get_elements_by_css 474 try to get elements: view
+DEBUG 2023-07-21 12:17:41,756 connection.py _safely_send    417 SEND > {"id":"5b1c7506-d84d-40a6-ac28-cc7b9397ea56","method":"Element.getElements","params":{"selector":"view","elementId":"b6ecc829-46e5-47b2-8bb1-8e0d41089dbb","pageId":270,"nodeId":"71572bb5"}}
+DEBUG 2023-07-21 12:17:41,766 connection.py _on_message     652 RECV < {"id":"5b1c7506-d84d-40a6-ac28-cc7b9397ea56","result":{"elements":[{"elementId":"22123a9d-e450-46ec-b2b5-f3ab3714f4ec","tagName":"view"},{"elementId":"1535a6a6-b4cf-444e-ad78-6de44d5cc295","tagName":"view"},{"elementId":"9f99bb3d-0586-4148-a748-7a524f88d435","tagName":"view"},{"elementId":"7b33efb2-240b-498e-96a1-06d76073ae29","tagName":"view"}]}}
+INFO  2023-07-21 12:17:41,768 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99C7F0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99C7C0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D390>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D0F0>]
+INFO  2023-07-21 12:17:41,770 element.py _get_elements_by_css 474 try to get elements: van-icon
+DEBUG 2023-07-21 12:17:41,771 connection.py _safely_send    417 SEND > {"id":"37739a48-107c-469c-bf3d-06785a803c29","method":"Element.getElements","params":{"selector":"van-icon","elementId":"22123a9d-e450-46ec-b2b5-f3ab3714f4ec","pageId":270}}
+DEBUG 2023-07-21 12:17:41,781 connection.py _on_message     652 RECV < {"id":"37739a48-107c-469c-bf3d-06785a803c29","result":{"elements":[{"elementId":"6882efb0-85a8-457d-bfac-09420d9d4898","tagName":"van-icon","nodeId":"a45c2b57"}]}}
+INFO  2023-07-21 12:17:41,782 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D330>]
+INFO  2023-07-21 12:17:41,784 element.py _get_elements_by_css 474 try to get elements: view
+DEBUG 2023-07-21 12:17:41,785 connection.py _safely_send    417 SEND > {"id":"6af99c99-a964-49fd-be9b-e178438ce3f7","method":"Element.getElements","params":{"selector":"view","elementId":"6882efb0-85a8-457d-bfac-09420d9d4898","pageId":270,"nodeId":"a45c2b57"}}
+DEBUG 2023-07-21 12:17:41,795 connection.py _on_message     652 RECV < {"id":"6af99c99-a964-49fd-be9b-e178438ce3f7","result":{"elements":[{"elementId":"9f99bb3d-0586-4148-a748-7a524f88d435","tagName":"view"}]}}
+INFO  2023-07-21 12:17:41,797 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D600>]
+DEBUG 2023-07-21 12:17:41,798 connection.py _safely_send    417 SEND > {"id":"5820a6f7-8a16-4b2e-af93-0fafaa3c61a7","method":"Element.tap","params":{"elementId":"9f99bb3d-0586-4148-a748-7a524f88d435","pageId":270}}
+DEBUG 2023-07-21 12:17:41,915 connection.py _on_message     652 RECV < {"id":"5820a6f7-8a16-4b2e-af93-0fafaa3c61a7","result":{}}
+INFO  2023-07-21 12:17:41,917 page.py    _get_elements_by_css 557 try to get elements: van-radio-group
+DEBUG 2023-07-21 12:17:41,919 connection.py _safely_send    417 SEND > {"id":"f48cf697-f926-4fbe-a158-4d28e2ba06d9","method":"Page.getElements","params":{"selector":"van-radio-group","pageId":270}}
+DEBUG 2023-07-21 12:17:42,006 connection.py _on_message     650 RECV < {"id":"f48cf697-f926-4fbe-a158-4d28e2ba06d9","result":{"elements":[{"elementId":"b1524d9d-4eb4-49dd-88a7-b09c5dcb4c2d","tagName":"van-radio-group","nodeId":"4f74940a"},{"elementId":"1711af1d-07ef-4b60-b1c2-8137523d19b5","tagName":"van-radio-group","nodeId":"2b0f051d"},{"elementId":"d46cf697-d7e4-4dcf-a057-20690c2a9441","tagName":"van-radio-group","nodeId":"a971246c"},{"elementId":"ff83ece7-8141-480c-b9eb-9aba737a8a39","tagName":"van-radio-group","nodeId":"aa3104e6"},{"elementId":"fc124331-bd80-4f2b-a300-...
+INFO  2023-07-21 12:17:42,008 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99CD30>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D270>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99CFA0>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D150>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D120>]
+INFO  2023-07-21 12:17:42,010 element.py _get_elements_by_css 474 try to get elements: van-radio
+DEBUG 2023-07-21 12:17:42,011 connection.py _safely_send    417 SEND > {"id":"cbe1a324-e1ed-4abd-a6b1-1eaff2c19ae6","method":"Element.getElements","params":{"selector":"van-radio","elementId":"ff83ece7-8141-480c-b9eb-9aba737a8a39","pageId":270,"nodeId":"aa3104e6"}}
+DEBUG 2023-07-21 12:17:42,020 connection.py _on_message     652 RECV < {"id":"cbe1a324-e1ed-4abd-a6b1-1eaff2c19ae6","result":{"elements":[{"elementId":"50aa359a-ce63-4b78-8a39-3e90215d7462","tagName":"van-radio","nodeId":"9e3e4c35"},{"elementId":"3b04a76c-2b54-4670-b087-d1033ca085d0","tagName":"van-radio","nodeId":"fef85073"},{"elementId":"1f7bcd00-e0f7-4640-a73f-07cb24dc84fe","tagName":"van-radio","nodeId":"1a097695"},{"elementId":"05e4c832-b33f-4ae5-ab0c-4f964dd4f691","tagName":"van-radio","nodeId":"d2346d80"}]}}
+INFO  2023-07-21 12:17:42,022 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99C7F0>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D0F0>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99C7C0>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D540>]
+INFO  2023-07-21 12:17:42,023 element.py _get_elements_by_css 474 try to get elements: view
+DEBUG 2023-07-21 12:17:42,025 connection.py _safely_send    417 SEND > {"id":"21f145bf-9074-4e29-bb01-22b3870f2588","method":"Element.getElements","params":{"selector":"view","elementId":"3b04a76c-2b54-4670-b087-d1033ca085d0","pageId":270,"nodeId":"fef85073"}}
+DEBUG 2023-07-21 12:17:42,034 connection.py _on_message     652 RECV < {"id":"21f145bf-9074-4e29-bb01-22b3870f2588","result":{"elements":[{"elementId":"60be8518-ea28-4b87-b2e0-7d3370a61977","tagName":"view"},{"elementId":"a746cb5a-8084-469d-bba6-331d311d68a6","tagName":"view"},{"elementId":"0730e507-4744-451e-b554-ad9ab2fcffef","tagName":"view"},{"elementId":"1ea8c07e-8078-45a3-ae2c-09fdacf373fd","tagName":"view"}]}}
+INFO  2023-07-21 12:17:42,036 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99C940>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D210>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D240>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99CB50>]
+INFO  2023-07-21 12:17:42,038 element.py _get_elements_by_css 474 try to get elements: van-icon
+DEBUG 2023-07-21 12:17:42,039 connection.py _safely_send    417 SEND > {"id":"ac5ff4bc-9363-427e-ae6f-dd00096236b5","method":"Element.getElements","params":{"selector":"van-icon","elementId":"60be8518-ea28-4b87-b2e0-7d3370a61977","pageId":270}}
+DEBUG 2023-07-21 12:17:42,048 connection.py _on_message     652 RECV < {"id":"ac5ff4bc-9363-427e-ae6f-dd00096236b5","result":{"elements":[{"elementId":"69876c5b-d4c6-427c-9765-5a5311700229","tagName":"van-icon","nodeId":"595583d3"}]}}
+INFO  2023-07-21 12:17:42,050 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D450>]
+INFO  2023-07-21 12:17:42,051 element.py _get_elements_by_css 474 try to get elements: view
+DEBUG 2023-07-21 12:17:42,052 connection.py _safely_send    417 SEND > {"id":"49ff18be-4935-45c2-9c15-f0ca34c3c9a5","method":"Element.getElements","params":{"selector":"view","elementId":"69876c5b-d4c6-427c-9765-5a5311700229","pageId":270,"nodeId":"595583d3"}}
+DEBUG 2023-07-21 12:17:42,058 connection.py _on_message     652 RECV < {"id":"49ff18be-4935-45c2-9c15-f0ca34c3c9a5","result":{"elements":[{"elementId":"0730e507-4744-451e-b554-ad9ab2fcffef","tagName":"view"}]}}
+INFO  2023-07-21 12:17:42,060 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D180>]
+DEBUG 2023-07-21 12:17:42,062 connection.py _safely_send    417 SEND > {"id":"6c3e386b-0fea-446a-a2f0-ba2a436320f9","method":"Element.tap","params":{"elementId":"0730e507-4744-451e-b554-ad9ab2fcffef","pageId":270}}
+DEBUG 2023-07-21 12:17:42,149 connection.py _on_message     652 RECV < {"id":"6c3e386b-0fea-446a-a2f0-ba2a436320f9","result":{}}
+INFO  2023-07-21 12:17:42,151 page.py    _get_elements_by_css 557 try to get elements: van-radio-group
+DEBUG 2023-07-21 12:17:42,153 connection.py _safely_send    417 SEND > {"id":"4d033849-1634-4c0c-917d-26e51128988c","method":"Page.getElements","params":{"selector":"van-radio-group","pageId":270}}
+DEBUG 2023-07-21 12:17:42,211 connection.py _on_message     650 RECV < {"id":"4d033849-1634-4c0c-917d-26e51128988c","result":{"elements":[{"elementId":"b1524d9d-4eb4-49dd-88a7-b09c5dcb4c2d","tagName":"van-radio-group","nodeId":"4f74940a"},{"elementId":"1711af1d-07ef-4b60-b1c2-8137523d19b5","tagName":"van-radio-group","nodeId":"2b0f051d"},{"elementId":"d46cf697-d7e4-4dcf-a057-20690c2a9441","tagName":"van-radio-group","nodeId":"a971246c"},{"elementId":"ff83ece7-8141-480c-b9eb-9aba737a8a39","tagName":"van-radio-group","nodeId":"aa3104e6"},{"elementId":"fc124331-bd80-4f2b-a300-...
+INFO  2023-07-21 12:17:42,213 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99C910>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D360>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99CEB0>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99C7C0>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D5A0>]
+INFO  2023-07-21 12:17:42,218 element.py _get_elements_by_css 474 try to get elements: van-radio
+DEBUG 2023-07-21 12:17:42,220 connection.py _safely_send    417 SEND > {"id":"488d0f15-af0e-4451-be7e-a96ed24a1d4f","method":"Element.getElements","params":{"selector":"van-radio","elementId":"fc124331-bd80-4f2b-a300-0d45b213b880","pageId":270,"nodeId":"1a356b80"}}
+DEBUG 2023-07-21 12:17:42,224 connection.py _on_message     652 RECV < {"id":"488d0f15-af0e-4451-be7e-a96ed24a1d4f","result":{"elements":[{"elementId":"24fb4bbf-d14f-4452-9e68-c8c79c0c670f","tagName":"van-radio","nodeId":"b1ba1b1d"},{"elementId":"c691324f-8377-432d-a192-c13d43dbd433","tagName":"van-radio","nodeId":"2ab17c8a"}]}}
+INFO  2023-07-21 12:17:42,226 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99C940>, <minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99CB50>]
+INFO  2023-07-21 12:17:42,231 element.py _get_elements_by_css 474 try to get elements: view
+DEBUG 2023-07-21 12:17:42,233 connection.py _safely_send    417 SEND > {"id":"d42d62ec-70fc-4450-868a-64d32636542b","method":"Element.getElements","params":{"selector":"view","elementId":"24fb4bbf-d14f-4452-9e68-c8c79c0c670f","pageId":270,"nodeId":"b1ba1b1d"}}
+DEBUG 2023-07-21 12:17:42,238 connection.py _on_message     652 RECV < {"id":"d42d62ec-70fc-4450-868a-64d32636542b","result":{"elements":[{"elementId":"1a886165-20db-4d2b-9e52-ebaccb6c5b21","tagName":"view"},{"elementId":"2e733f32-91df-4bfd-b01c-169e2b6e5902","tagName":"view"},{"elementId":"b0904b43-c7c1-4a3f-adf2-d4340e805609","tagName":"view"},{"elementId":"581eb8bc-ae6a-40a6-bb7c-60ea861550a8","tagName":"view"}]}}
+INFO  2023-07-21 12:17:42,240 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99CFA0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99CF40>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D150>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D390>]
+INFO  2023-07-21 12:17:42,243 element.py _get_elements_by_css 474 try to get elements: van-icon
+DEBUG 2023-07-21 12:17:42,246 connection.py _safely_send    417 SEND > {"id":"f7377f3d-3073-4da6-bb83-431243172bca","method":"Element.getElements","params":{"selector":"van-icon","elementId":"1a886165-20db-4d2b-9e52-ebaccb6c5b21","pageId":270}}
+DEBUG 2023-07-21 12:17:42,252 connection.py _on_message     652 RECV < {"id":"f7377f3d-3073-4da6-bb83-431243172bca","result":{"elements":[{"elementId":"18539a56-f0eb-478d-95f5-1882d95ec676","tagName":"van-icon","nodeId":"255ef7da"}]}}
+INFO  2023-07-21 12:17:42,255 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000002893F99D270>]
+INFO  2023-07-21 12:17:42,257 element.py _get_elements_by_css 474 try to get elements: view
+DEBUG 2023-07-21 12:17:42,259 connection.py _safely_send    417 SEND > {"id":"49f6bb55-3700-417e-8b63-3b88e4061e34","method":"Element.getElements","params":{"selector":"view","elementId":"18539a56-f0eb-478d-95f5-1882d95ec676","pageId":270,"nodeId":"255ef7da"}}
+DEBUG 2023-07-21 12:17:42,266 connection.py _on_message     652 RECV < {"id":"49f6bb55-3700-417e-8b63-3b88e4061e34","result":{"elements":[{"elementId":"b0904b43-c7c1-4a3f-adf2-d4340e805609","tagName":"view"}]}}
+INFO  2023-07-21 12:17:42,269 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D330>]
+DEBUG 2023-07-21 12:17:42,271 connection.py _safely_send    417 SEND > {"id":"f9ccde2d-9de4-4998-9da1-0fa74a3d7f11","method":"Element.tap","params":{"elementId":"b0904b43-c7c1-4a3f-adf2-d4340e805609","pageId":270}}
+DEBUG 2023-07-21 12:17:42,367 connection.py _on_message     652 RECV < {"id":"f9ccde2d-9de4-4998-9da1-0fa74a3d7f11","result":{}}
+INFO  2023-07-21 12:17:42,370 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:17:42,374 connection.py _safely_send    417 SEND > {"id":"0ce024aa-35f1-4980-bafd-2e937ce166fd","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":270}}
+DEBUG 2023-07-21 12:17:42,412 connection.py _on_message     652 RECV < {"id":"0ce024aa-35f1-4980-bafd-2e937ce166fd","result":{"elements":[{"elementId":"995356c3-add6-43e5-a13f-bbec707af19f","tagName":"view"}]}}
+INFO  2023-07-21 12:17:42,414 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D600>]
+DEBUG 2023-07-21 12:17:42,416 connection.py _safely_send    417 SEND > {"id":"c6be73b0-8563-482b-ac24-0013220ca9f4","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"995356c3-add6-43e5-a13f-bbec707af19f","pageId":270}}
+DEBUG 2023-07-21 12:17:42,422 connection.py _on_message     652 RECV < {"id":"c6be73b0-8563-482b-ac24-0013220ca9f4","result":{"properties":["5/5 完成"]}}
+INFO  2023-07-21 12:17:42,424 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:17:42,426 connection.py _safely_send    417 SEND > {"id":"b62c9ab5-38cf-4605-8f7f-408418168d5d","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":270}}
+DEBUG 2023-07-21 12:17:42,431 connection.py _on_message     652 RECV < {"id":"b62c9ab5-38cf-4605-8f7f-408418168d5d","result":{"elements":[{"elementId":"995356c3-add6-43e5-a13f-bbec707af19f","tagName":"view"}]}}
+INFO  2023-07-21 12:17:42,433 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99C910>]
+DEBUG 2023-07-21 12:17:42,435 connection.py _safely_send    417 SEND > {"id":"edb142b6-f5a3-4220-a6b0-5ccfd3e8ff41","method":"Element.tap","params":{"elementId":"995356c3-add6-43e5-a13f-bbec707af19f","pageId":270}}
+DEBUG 2023-07-21 12:17:42,487 connection.py _on_message     652 RECV < {"id":"edb142b6-f5a3-4220-a6b0-5ccfd3e8ff41","result":{}}
+DEBUG 2023-07-21 12:17:43,490 page.py    wait_for        321 waitFor: 1.0006921291351318 s
+INFO  2023-07-21 12:17:43,492 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:17:43,493 connection.py _safely_send    417 SEND > {"id":"a574c40a-6378-4dae-905d-6151c716e52a","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":270}}
+DEBUG 2023-07-21 12:17:43,500 connection.py _on_message     652 RECV < {"id":"a574c40a-6378-4dae-905d-6151c716e52a","result":{"elements":[{"elementId":"995356c3-add6-43e5-a13f-bbec707af19f","tagName":"view"},{"elementId":"afccdc1a-daf4-4d0f-a36a-0824cab77425","tagName":"view"}]}}
+INFO  2023-07-21 12:17:43,502 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D5A0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000002893F99D1E0>]
+DEBUG 2023-07-21 12:17:43,503 connection.py _safely_send    417 SEND > {"id":"7b63c4de-5467-46f1-9d14-75d972068fdf","method":"Element.tap","params":{"elementId":"afccdc1a-daf4-4d0f-a36a-0824cab77425","pageId":270}}
+DEBUG 2023-07-21 12:17:43,520 connection.py _on_message     652 RECV < {"id":"7b63c4de-5467-46f1-9d14-75d972068fdf","result":{}}
+DEBUG 2023-07-21 12:17:44,060 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":269,"path":"pages/assess/assessTotal","query":{"mode":"1","schemeId":"1","currentGender":"m"},"openType":"navigateBack","__ts__":1689913063906},1689913063907]}}
+INFO  2023-07-21 12:17:44,062 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 269, 'path': 'pages/assess/assessTotal', 'query': {'mode': '1', 'schemeId': '1', 'currentGender': 'm'}, 'openType': 'navigateBack', '__ts__': 1689913063906}, 1689913063907]}
+DEBUG 2023-07-21 12:17:46,522 page.py    wait_for        321 waitFor: 3.0004332065582275 s
+INFO  2023-07-21 12:17:46,524 page.py    _get_elements_by_css 557 try to get elements: van-radio-group
+DEBUG 2023-07-21 12:17:46,525 connection.py _safely_send    417 SEND > {"id":"a6d4620a-d961-41ec-b001-e74bd227450e","method":"Page.getElements","params":{"selector":"van-radio-group","pageId":269}}
+DEBUG 2023-07-21 12:17:46,531 connection.py _on_message     652 RECV < {"id":"a6d4620a-d961-41ec-b001-e74bd227450e","result":{"elements":[]}}
+WARNI 2023-07-21 12:17:46,532 page.py    _get_elements_by_css 562 Could not found any element 'van-radio-group' you need
+INFO  2023-07-21 12:17:46,535 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:17:46,536 connection.py _safely_send    417 SEND > {"id":"bcccc731-484b-43db-af2a-f86be2d0df91","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:17:46,541 connection.py _on_message     652 RECV < {"id":"bcccc731-484b-43db-af2a-f86be2d0df91","result":{"elements":[]}}
+DEBUG 2023-07-21 12:17:47,543 connection.py _safely_send    417 SEND > {"id":"57f1d3d3-be93-4adc-851d-f64bab6204da","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:17:47,547 connection.py _on_message     652 RECV < {"id":"57f1d3d3-be93-4adc-851d-f64bab6204da","result":{"elements":[]}}
+DEBUG 2023-07-21 12:17:48,549 connection.py _safely_send    417 SEND > {"id":"e0b677fc-7d1a-46cb-b8cd-26416fb80fb9","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:17:48,553 connection.py _on_message     652 RECV < {"id":"e0b677fc-7d1a-46cb-b8cd-26416fb80fb9","result":{"elements":[]}}
+WARNI 2023-07-21 12:17:49,556 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+INFO  2023-07-21 12:17:49,561 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:17:49,562 connection.py _safely_send    417 SEND > {"id":"c9ced494-3056-4cf6-a9d8-4ed14a74d37e","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:17:49,566 connection.py _on_message     652 RECV < {"id":"c9ced494-3056-4cf6-a9d8-4ed14a74d37e","result":{"elements":[]}}
+DEBUG 2023-07-21 12:17:50,569 connection.py _safely_send    417 SEND > {"id":"282164b2-b624-4449-ac3f-daf5ef8d3c1d","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:17:50,610 connection.py _on_message     652 RECV < {"id":"282164b2-b624-4449-ac3f-daf5ef8d3c1d","result":{"elements":[]}}
+DEBUG 2023-07-21 12:17:51,613 connection.py _safely_send    417 SEND > {"id":"eafa4830-ac14-4bd1-a97d-88e48feaf39a","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:17:51,617 connection.py _on_message     652 RECV < {"id":"eafa4830-ac14-4bd1-a97d-88e48feaf39a","result":{"elements":[]}}
+WARNI 2023-07-21 12:17:52,619 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+DEBUG 2023-07-21 12:17:53,621 page.py    wait_for        321 waitFor: 1.000091314315796 s
+INFO  2023-07-21 12:17:53,624 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:17:53,625 connection.py _safely_send    417 SEND > {"id":"9ef38188-21e1-4bfa-b38c-71117e681c3a","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:17:53,629 connection.py _on_message     652 RECV < {"id":"9ef38188-21e1-4bfa-b38c-71117e681c3a","result":{"elements":[]}}
+DEBUG 2023-07-21 12:17:54,631 connection.py _safely_send    417 SEND > {"id":"187970fd-7e4e-4e30-a7e5-e0fb23020bc4","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:17:54,635 connection.py _on_message     652 RECV < {"id":"187970fd-7e4e-4e30-a7e5-e0fb23020bc4","result":{"elements":[]}}
+DEBUG 2023-07-21 12:17:55,638 connection.py _safely_send    417 SEND > {"id":"734c5699-38c4-4d77-b325-a36280a40091","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:17:55,642 connection.py _on_message     652 RECV < {"id":"734c5699-38c4-4d77-b325-a36280a40091","result":{"elements":[]}}
+WARNI 2023-07-21 12:17:56,644 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+DEBUG 2023-07-21 12:17:59,647 page.py    wait_for        321 waitFor: 3.000025987625122 s
+INFO  2023-07-21 12:17:59,649 page.py    _get_elements_by_css 557 try to get elements: van-radio-group
+DEBUG 2023-07-21 12:17:59,650 connection.py _safely_send    417 SEND > {"id":"54431d4b-04ac-4cc0-8ac6-2da39b4d81d8","method":"Page.getElements","params":{"selector":"van-radio-group","pageId":269}}
+DEBUG 2023-07-21 12:17:59,655 connection.py _on_message     652 RECV < {"id":"54431d4b-04ac-4cc0-8ac6-2da39b4d81d8","result":{"elements":[]}}
+WARNI 2023-07-21 12:17:59,657 page.py    _get_elements_by_css 562 Could not found any element 'van-radio-group' you need
+INFO  2023-07-21 12:17:59,659 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:17:59,660 connection.py _safely_send    417 SEND > {"id":"973c91f3-4adc-4109-9838-79977a70a9b8","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:17:59,664 connection.py _on_message     652 RECV < {"id":"973c91f3-4adc-4109-9838-79977a70a9b8","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:00,667 connection.py _safely_send    417 SEND > {"id":"a4047bad-f0ff-431b-ac60-fe8305c994f6","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:00,671 connection.py _on_message     652 RECV < {"id":"a4047bad-f0ff-431b-ac60-fe8305c994f6","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:01,673 connection.py _safely_send    417 SEND > {"id":"6a08d849-dcbf-4333-811f-ddc9d23366ed","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:01,677 connection.py _on_message     652 RECV < {"id":"6a08d849-dcbf-4333-811f-ddc9d23366ed","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:02,679 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+INFO  2023-07-21 12:18:02,682 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:18:02,684 connection.py _safely_send    417 SEND > {"id":"465fb78c-1083-48f9-8497-fb0be71adff8","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:02,688 connection.py _on_message     652 RECV < {"id":"465fb78c-1083-48f9-8497-fb0be71adff8","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:03,690 connection.py _safely_send    417 SEND > {"id":"37070a03-d428-4fb6-b64b-88519ea6ee39","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:03,695 connection.py _on_message     652 RECV < {"id":"37070a03-d428-4fb6-b64b-88519ea6ee39","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:04,699 connection.py _safely_send    417 SEND > {"id":"bec15d80-c1c9-4b7e-a673-01c1490f8e3f","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:04,703 connection.py _on_message     652 RECV < {"id":"bec15d80-c1c9-4b7e-a673-01c1490f8e3f","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:05,705 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+DEBUG 2023-07-21 12:18:06,708 page.py    wait_for        321 waitFor: 1.0000686645507812 s
+INFO  2023-07-21 12:18:06,710 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:18:06,712 connection.py _safely_send    417 SEND > {"id":"1d90848c-0bc8-4724-8511-4d97a080cb31","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:06,718 connection.py _on_message     652 RECV < {"id":"1d90848c-0bc8-4724-8511-4d97a080cb31","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:07,720 connection.py _safely_send    417 SEND > {"id":"6182750e-11b4-4a70-bce9-c6b05d96883a","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:07,724 connection.py _on_message     652 RECV < {"id":"6182750e-11b4-4a70-bce9-c6b05d96883a","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:08,727 connection.py _safely_send    417 SEND > {"id":"75b40691-c4df-4b71-a969-8b05a10585bf","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:08,732 connection.py _on_message     652 RECV < {"id":"75b40691-c4df-4b71-a969-8b05a10585bf","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:09,733 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+DEBUG 2023-07-21 12:18:12,737 page.py    wait_for        321 waitFor: 3.000965118408203 s
+INFO  2023-07-21 12:18:12,738 page.py    _get_elements_by_css 557 try to get elements: van-radio-group
+DEBUG 2023-07-21 12:18:12,740 connection.py _safely_send    417 SEND > {"id":"898327fb-f961-42a8-b382-d46bec15753e","method":"Page.getElements","params":{"selector":"van-radio-group","pageId":269}}
+DEBUG 2023-07-21 12:18:12,744 connection.py _on_message     652 RECV < {"id":"898327fb-f961-42a8-b382-d46bec15753e","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:12,746 page.py    _get_elements_by_css 562 Could not found any element 'van-radio-group' you need
+INFO  2023-07-21 12:18:12,748 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:18:12,750 connection.py _safely_send    417 SEND > {"id":"e08550f2-87c1-44c6-a6b6-b2ce6dfbdd99","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:12,754 connection.py _on_message     652 RECV < {"id":"e08550f2-87c1-44c6-a6b6-b2ce6dfbdd99","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:13,756 connection.py _safely_send    417 SEND > {"id":"de83787a-9ed2-4dd9-92e0-5861639cd5ae","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:13,761 connection.py _on_message     652 RECV < {"id":"de83787a-9ed2-4dd9-92e0-5861639cd5ae","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:14,763 connection.py _safely_send    417 SEND > {"id":"a82fafe2-1812-4715-930d-d7449ac8889d","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:14,767 connection.py _on_message     652 RECV < {"id":"a82fafe2-1812-4715-930d-d7449ac8889d","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:15,770 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+INFO  2023-07-21 12:18:15,773 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:18:15,774 connection.py _safely_send    417 SEND > {"id":"072e8452-65b8-4c32-ba1d-480099517606","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:15,778 connection.py _on_message     652 RECV < {"id":"072e8452-65b8-4c32-ba1d-480099517606","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:16,780 connection.py _safely_send    417 SEND > {"id":"9bb17a8d-1d12-4485-a4be-5a34aeb5c7df","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:16,784 connection.py _on_message     652 RECV < {"id":"9bb17a8d-1d12-4485-a4be-5a34aeb5c7df","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:17,785 connection.py _safely_send    417 SEND > {"id":"384733ad-5f4a-496d-a725-aabe5a9e72d4","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:17,789 connection.py _on_message     652 RECV < {"id":"384733ad-5f4a-496d-a725-aabe5a9e72d4","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:18,792 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+DEBUG 2023-07-21 12:18:19,795 page.py    wait_for        321 waitFor: 1.0000603199005127 s
+INFO  2023-07-21 12:18:19,797 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:18:19,798 connection.py _safely_send    417 SEND > {"id":"76353921-51c7-461e-aba3-9f7e34a18ef3","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:19,802 connection.py _on_message     652 RECV < {"id":"76353921-51c7-461e-aba3-9f7e34a18ef3","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:20,804 connection.py _safely_send    417 SEND > {"id":"3910328f-41e6-4956-9c14-b7b43798feba","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:20,808 connection.py _on_message     652 RECV < {"id":"3910328f-41e6-4956-9c14-b7b43798feba","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:21,810 connection.py _safely_send    417 SEND > {"id":"44abbb39-bd5d-4dd0-a550-6963ce936b40","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:21,814 connection.py _on_message     652 RECV < {"id":"44abbb39-bd5d-4dd0-a550-6963ce936b40","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:22,816 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+DEBUG 2023-07-21 12:18:25,818 page.py    wait_for        321 waitFor: 3.0004465579986572 s
+INFO  2023-07-21 12:18:25,819 page.py    _get_elements_by_css 557 try to get elements: van-radio-group
+DEBUG 2023-07-21 12:18:25,822 connection.py _safely_send    417 SEND > {"id":"f41fd9d0-cb7b-4587-93ce-dcd06918a71b","method":"Page.getElements","params":{"selector":"van-radio-group","pageId":269}}
+DEBUG 2023-07-21 12:18:25,827 connection.py _on_message     652 RECV < {"id":"f41fd9d0-cb7b-4587-93ce-dcd06918a71b","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:25,829 page.py    _get_elements_by_css 562 Could not found any element 'van-radio-group' you need
+INFO  2023-07-21 12:18:25,831 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:18:25,832 connection.py _safely_send    417 SEND > {"id":"07f6d50a-ec29-4b40-83e2-78cc08098869","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:25,838 connection.py _on_message     652 RECV < {"id":"07f6d50a-ec29-4b40-83e2-78cc08098869","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:26,841 connection.py _safely_send    417 SEND > {"id":"e2dcf3a6-e555-4a2a-8474-50eed5b99ae2","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:26,845 connection.py _on_message     652 RECV < {"id":"e2dcf3a6-e555-4a2a-8474-50eed5b99ae2","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:27,847 connection.py _safely_send    417 SEND > {"id":"71443964-5a71-41cc-8d1f-effa77dfc5fb","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:27,851 connection.py _on_message     652 RECV < {"id":"71443964-5a71-41cc-8d1f-effa77dfc5fb","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:28,853 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+INFO  2023-07-21 12:18:28,857 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:18:28,858 connection.py _safely_send    417 SEND > {"id":"dc75cb60-3b6c-4fe7-8f50-ea23dee9a7fc","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:28,862 connection.py _on_message     652 RECV < {"id":"dc75cb60-3b6c-4fe7-8f50-ea23dee9a7fc","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:29,874 connection.py _safely_send    417 SEND > {"id":"95a96ea7-ea60-4b1a-adfb-dbb143927820","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:29,886 connection.py _on_message     652 RECV < {"id":"95a96ea7-ea60-4b1a-adfb-dbb143927820","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:30,888 connection.py _safely_send    417 SEND > {"id":"a2f3de6e-a163-4985-bf49-5718aa1980e5","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:30,892 connection.py _on_message     652 RECV < {"id":"a2f3de6e-a163-4985-bf49-5718aa1980e5","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:31,893 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+DEBUG 2023-07-21 12:18:32,896 page.py    wait_for        321 waitFor: 1.0005824565887451 s
+INFO  2023-07-21 12:18:32,899 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:18:32,902 connection.py _safely_send    417 SEND > {"id":"026ef672-92b1-49e6-972d-86348968e8f5","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:32,907 connection.py _on_message     652 RECV < {"id":"026ef672-92b1-49e6-972d-86348968e8f5","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:33,908 connection.py _safely_send    417 SEND > {"id":"4e792517-e0cf-4112-8d29-3a2c7ce12011","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:33,912 connection.py _on_message     652 RECV < {"id":"4e792517-e0cf-4112-8d29-3a2c7ce12011","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:34,915 connection.py _safely_send    417 SEND > {"id":"4aad509c-6273-4787-b8d3-afbebdf553e7","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:34,919 connection.py _on_message     652 RECV < {"id":"4aad509c-6273-4787-b8d3-afbebdf553e7","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:35,921 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+DEBUG 2023-07-21 12:18:38,923 page.py    wait_for        321 waitFor: 3.0002448558807373 s
+INFO  2023-07-21 12:18:38,924 page.py    _get_elements_by_css 557 try to get elements: van-radio-group
+DEBUG 2023-07-21 12:18:38,926 connection.py _safely_send    417 SEND > {"id":"b1a2db4a-cf7b-4715-b487-afbfd2be83b8","method":"Page.getElements","params":{"selector":"van-radio-group","pageId":269}}
+DEBUG 2023-07-21 12:18:38,930 connection.py _on_message     652 RECV < {"id":"b1a2db4a-cf7b-4715-b487-afbfd2be83b8","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:38,932 page.py    _get_elements_by_css 562 Could not found any element 'van-radio-group' you need
+INFO  2023-07-21 12:18:38,935 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:18:38,937 connection.py _safely_send    417 SEND > {"id":"8cdc706b-e018-4858-984d-3698091038ba","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:38,940 connection.py _on_message     652 RECV < {"id":"8cdc706b-e018-4858-984d-3698091038ba","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:39,942 connection.py _safely_send    417 SEND > {"id":"d83638ef-a340-418e-ac1a-9f8f3f138dc8","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:39,948 connection.py _on_message     652 RECV < {"id":"d83638ef-a340-418e-ac1a-9f8f3f138dc8","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:40,951 connection.py _safely_send    417 SEND > {"id":"b1aa7062-dbdc-43f7-be64-05463328cd7f","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:40,955 connection.py _on_message     652 RECV < {"id":"b1aa7062-dbdc-43f7-be64-05463328cd7f","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:41,958 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+INFO  2023-07-21 12:18:41,961 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:18:41,962 connection.py _safely_send    417 SEND > {"id":"aa07ac69-d9ab-4b3d-8a33-ed9d42765991","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:41,966 connection.py _on_message     652 RECV < {"id":"aa07ac69-d9ab-4b3d-8a33-ed9d42765991","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:42,968 connection.py _safely_send    417 SEND > {"id":"3ec0b6cd-e110-4c51-82ab-a4828590bace","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:42,973 connection.py _on_message     652 RECV < {"id":"3ec0b6cd-e110-4c51-82ab-a4828590bace","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:43,975 connection.py _safely_send    417 SEND > {"id":"ba48ead1-d272-4377-bea2-1584e25be3c0","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:43,980 connection.py _on_message     652 RECV < {"id":"ba48ead1-d272-4377-bea2-1584e25be3c0","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:44,982 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+DEBUG 2023-07-21 12:18:45,984 page.py    wait_for        321 waitFor: 1.000365972518921 s
+INFO  2023-07-21 12:18:45,986 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:18:45,987 connection.py _safely_send    417 SEND > {"id":"3ba58ff3-e797-4f6c-b694-d56b966db6d3","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:45,992 connection.py _on_message     652 RECV < {"id":"3ba58ff3-e797-4f6c-b694-d56b966db6d3","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:46,995 connection.py _safely_send    417 SEND > {"id":"0030be30-c7ac-4f94-b182-e4ddec6c854b","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:46,999 connection.py _on_message     652 RECV < {"id":"0030be30-c7ac-4f94-b182-e4ddec6c854b","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:48,001 connection.py _safely_send    417 SEND > {"id":"615cabf3-fa97-49d5-a74d-2a234a57bed1","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:48,004 connection.py _on_message     652 RECV < {"id":"615cabf3-fa97-49d5-a74d-2a234a57bed1","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:49,006 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+DEBUG 2023-07-21 12:18:52,009 page.py    wait_for        321 waitFor: 3.0001585483551025 s
+INFO  2023-07-21 12:18:52,011 page.py    _get_elements_by_css 557 try to get elements: van-radio-group
+DEBUG 2023-07-21 12:18:52,013 connection.py _safely_send    417 SEND > {"id":"46131028-d5fb-45db-8f6e-f84385d2f110","method":"Page.getElements","params":{"selector":"van-radio-group","pageId":269}}
+DEBUG 2023-07-21 12:18:52,017 connection.py _on_message     652 RECV < {"id":"46131028-d5fb-45db-8f6e-f84385d2f110","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:52,018 page.py    _get_elements_by_css 562 Could not found any element 'van-radio-group' you need
+INFO  2023-07-21 12:18:52,021 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:18:52,022 connection.py _safely_send    417 SEND > {"id":"85231086-6a98-4d34-919d-fdc426c77eff","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:52,026 connection.py _on_message     652 RECV < {"id":"85231086-6a98-4d34-919d-fdc426c77eff","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:53,029 connection.py _safely_send    417 SEND > {"id":"629ce026-7669-4dde-8153-9e60abcd7c38","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:53,033 connection.py _on_message     652 RECV < {"id":"629ce026-7669-4dde-8153-9e60abcd7c38","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:54,036 connection.py _safely_send    417 SEND > {"id":"9884fc4c-ef76-41b8-880e-307a3c1e40b0","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:54,040 connection.py _on_message     652 RECV < {"id":"9884fc4c-ef76-41b8-880e-307a3c1e40b0","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:55,042 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+INFO  2023-07-21 12:18:55,045 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:18:55,047 connection.py _safely_send    417 SEND > {"id":"c26e058a-c37a-492e-bb47-ef81d36a8112","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:55,051 connection.py _on_message     652 RECV < {"id":"c26e058a-c37a-492e-bb47-ef81d36a8112","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:56,052 connection.py _safely_send    417 SEND > {"id":"093a6b36-a0fd-4f9b-90ad-f5d48f64ee93","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:56,060 connection.py _on_message     652 RECV < {"id":"093a6b36-a0fd-4f9b-90ad-f5d48f64ee93","result":{"elements":[]}}
+DEBUG 2023-07-21 12:18:57,063 connection.py _safely_send    417 SEND > {"id":"548c4bfb-8e6d-4603-b1a2-cdd2c5d915e9","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:57,067 connection.py _on_message     652 RECV < {"id":"548c4bfb-8e6d-4603-b1a2-cdd2c5d915e9","result":{"elements":[]}}
+WARNI 2023-07-21 12:18:58,068 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+DEBUG 2023-07-21 12:18:59,070 page.py    wait_for        321 waitFor: 1.0003013610839844 s
+INFO  2023-07-21 12:18:59,073 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:18:59,075 connection.py _safely_send    417 SEND > {"id":"0777ba79-d83c-41a8-9596-6bf300245433","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:18:59,079 connection.py _on_message     652 RECV < {"id":"0777ba79-d83c-41a8-9596-6bf300245433","result":{"elements":[]}}
+DEBUG 2023-07-21 12:19:00,082 connection.py _safely_send    417 SEND > {"id":"eb705ea0-3406-4f26-a07f-87eb1cd26a65","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:19:00,086 connection.py _on_message     652 RECV < {"id":"eb705ea0-3406-4f26-a07f-87eb1cd26a65","result":{"elements":[]}}
+DEBUG 2023-07-21 12:19:01,089 connection.py _safely_send    417 SEND > {"id":"9c457dff-9b7d-4a03-80b0-018ba29f9c8f","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:19:01,094 connection.py _on_message     652 RECV < {"id":"9c457dff-9b7d-4a03-80b0-018ba29f9c8f","result":{"elements":[]}}
+WARNI 2023-07-21 12:19:02,096 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+DEBUG 2023-07-21 12:19:05,098 page.py    wait_for        321 waitFor: 3.000066041946411 s
+INFO  2023-07-21 12:19:05,099 page.py    _get_elements_by_css 557 try to get elements: van-radio-group
+DEBUG 2023-07-21 12:19:05,101 connection.py _safely_send    417 SEND > {"id":"00c40f0c-0688-434a-9e53-52c1263a3c36","method":"Page.getElements","params":{"selector":"van-radio-group","pageId":269}}
+DEBUG 2023-07-21 12:19:05,107 connection.py _on_message     652 RECV < {"id":"00c40f0c-0688-434a-9e53-52c1263a3c36","result":{"elements":[]}}
+WARNI 2023-07-21 12:19:05,108 page.py    _get_elements_by_css 562 Could not found any element 'van-radio-group' you need
+INFO  2023-07-21 12:19:05,111 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:19:05,112 connection.py _safely_send    417 SEND > {"id":"675f7a88-4c6f-4a65-8e68-b0657d098289","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:19:05,117 connection.py _on_message     652 RECV < {"id":"675f7a88-4c6f-4a65-8e68-b0657d098289","result":{"elements":[]}}
+DEBUG 2023-07-21 12:19:06,119 connection.py _safely_send    417 SEND > {"id":"08ceefe6-a4cd-4275-bdc0-d9db1fdb1aa9","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:19:06,123 connection.py _on_message     652 RECV < {"id":"08ceefe6-a4cd-4275-bdc0-d9db1fdb1aa9","result":{"elements":[]}}
+DEBUG 2023-07-21 12:19:07,126 connection.py _safely_send    417 SEND > {"id":"cf5a2685-3938-4b77-8042-a9f742a0c28d","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:19:07,131 connection.py _on_message     652 RECV < {"id":"cf5a2685-3938-4b77-8042-a9f742a0c28d","result":{"elements":[]}}
+WARNI 2023-07-21 12:19:08,133 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+INFO  2023-07-21 12:19:08,137 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:19:08,139 connection.py _safely_send    417 SEND > {"id":"73eb21a7-cd07-40ef-b702-3c407163a5ee","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:19:08,142 connection.py _on_message     652 RECV < {"id":"73eb21a7-cd07-40ef-b702-3c407163a5ee","result":{"elements":[]}}
+DEBUG 2023-07-21 12:19:09,145 connection.py _safely_send    417 SEND > {"id":"2e4c3ec4-2510-4617-9b2d-6789b12b6dab","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:19:09,152 connection.py _on_message     652 RECV < {"id":"2e4c3ec4-2510-4617-9b2d-6789b12b6dab","result":{"elements":[]}}
+DEBUG 2023-07-21 12:19:10,155 connection.py _safely_send    417 SEND > {"id":"cbe6d865-363b-4df7-8b8c-1473fc28eb8c","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:19:10,160 connection.py _on_message     652 RECV < {"id":"cbe6d865-363b-4df7-8b8c-1473fc28eb8c","result":{"elements":[]}}
+WARNI 2023-07-21 12:19:11,162 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+DEBUG 2023-07-21 12:19:12,165 page.py    wait_for        321 waitFor: 1.0001530647277832 s
+INFO  2023-07-21 12:19:12,168 page.py    _get_elements_by_css 557 try to get elements: [class='nextBtn']
+DEBUG 2023-07-21 12:19:12,169 connection.py _safely_send    417 SEND > {"id":"ea84b7fd-c90a-4ec9-bb58-394b423d2827","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:19:12,173 connection.py _on_message     652 RECV < {"id":"ea84b7fd-c90a-4ec9-bb58-394b423d2827","result":{"elements":[]}}
+DEBUG 2023-07-21 12:19:13,176 connection.py _safely_send    417 SEND > {"id":"afcaabb3-0c95-43ab-9b4b-2201e0203c06","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:19:13,180 connection.py _on_message     652 RECV < {"id":"afcaabb3-0c95-43ab-9b4b-2201e0203c06","result":{"elements":[]}}
+DEBUG 2023-07-21 12:19:14,182 connection.py _safely_send    417 SEND > {"id":"f987618f-9a14-488c-bfc4-b30c3b156b96","method":"Page.getElements","params":{"selector":"[class='nextBtn']","pageId":269}}
+DEBUG 2023-07-21 12:19:14,186 connection.py _on_message     652 RECV < {"id":"f987618f-9a14-488c-bfc4-b30c3b156b96","result":{"elements":[]}}
+WARNI 2023-07-21 12:19:15,188 page.py    _get_elements_by_css 562 Could not found any element '[class='nextBtn']' you need
+DEBUG 2023-07-21 12:19:15,191 minitest.py _miniTearDown   589 =========Current case Down: test_01=========
+INFO  2023-07-21 12:19:15,192 minitest.py capture         686 capture teardown.png
+INFO  2023-07-21 12:19:15,194 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-21 12:19:15,195 connection.py _safely_send    417 SEND > {"id":"b70ee665-fc52-414d-b8fe-bf8bb165bb00","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-21 12:19:15,364 connection.py _on_message     650 RECV < {"id":"b70ee665-fc52-414d-b8fe-bf8bb165bb00","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAZ4AAALgCAIAAAAr3oZ0AAAAAXNSR0IArs4c6QAAIABJREFUeJzsnX18FNW9/99nNo+EkAcgQIAEBIOiBuRRRUCt4O1VfCqg9op9Emkr0tv60N6fUPVC26vS3ivFei30SbytRVqxYKtCWwmoII8iggYQgiAhEJKQhDztzvn9MQ87uzu72YRNsqznI6/1vSdnzzkz893vfOd7zsyK7IclAAiBNFGxYsWKz28WtmtTUlJSShhpgBD+94oVK1acAKyiNiUlpQSUZlOc+FrFihUrPndWUZuSklICSuXaFCtWnICsojYlJaUElMq1KVasOAFZRW1KSkoJKJVrU6xYcQKyitqUlJQSUCrXplix4gRkFbUpKSkloFSuTbFixQnIKmpTUlJKQKlcm2LFihOQVdSmpKSUgFK5NsWKFScgq6...
+INFO  2023-07-21 12:19:15,378 basenative.py wrapper         28  call IdeNative.screen_shot end
+INFO  2023-07-21 12:19:15,379 basenative.py wrapper         24  call BaseNative.get_start_up
+INFO  2023-07-21 12:19:15,381 basenative.py wrapper         28  call BaseNative.get_start_up end

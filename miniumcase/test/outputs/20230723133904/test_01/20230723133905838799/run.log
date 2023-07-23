@@ -1,0 +1,62 @@
+INFO  2023-07-23 13:39:05,839 minitest.py _miniSetUp      340 =========Current case: test_01=========
+INFO  2023-07-23 13:39:05,839 minitest.py _miniSetUp      343 package info: E:.miniumcase.miniumcase.test.first_test, case info: FirstTest.test_01
+INFO  2023-07-23 13:39:05,840 basenative.py wrapper         24  call BaseNative.check_connection
+INFO  2023-07-23 13:39:05,840 basenative.py wrapper         28  call BaseNative.check_connection end
+INFO  2023-07-23 13:39:05,840 basenative.py wrapper         24  call BaseNative.back_to_miniprogram
+INFO  2023-07-23 13:39:05,841 basenative.py back_to_miniprogram 549 try back_to_miniprogram 3
+INFO  2023-07-23 13:39:05,841 basenative.py wrapper         28  call BaseNative.back_to_miniprogram end
+INFO  2023-07-23 13:39:05,841 app.py     relaunch        623 ReLaunch: /pages/account/mode
+DEBUG 2023-07-23 13:39:05,842 connection.py _safely_send    417 ASYNC_SEND > {"id":"8227b2d1-9994-495a-8940-3bd748c647af","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/account/mode"}]}}
+DEBUG 2023-07-23 13:39:05,859 connection.py _on_message     652 RECV < {"id":"8227b2d1-9994-495a-8940-3bd748c647af","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2023-07-23 13:39:05,860 connection.py _handle_async_msg 693 received async msg: 8227b2d1-9994-495a-8940-3bd748c647af
+DEBUG 2023-07-23 13:39:06,166 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":88,"path":"pages/account/mode","query":{},"openType":"reLaunch"},1690090746141]}}
+INFO  2023-07-23 13:39:06,167 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 88, 'path': 'pages/account/mode', 'query': {}, 'openType': 'reLaunch'}, 1690090746141]}
+INFO  2023-07-23 13:39:06,169 minitest.py capture         686 capture setup.png
+INFO  2023-07-23 13:39:06,169 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-23 13:39:06,169 connection.py _safely_send    417 SEND > {"id":"71594233-d42b-4366-8918-7c7dd8726bf9","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-23 13:39:06,209 connection.py _on_message     652 RECV < {"id":"71594233-d42b-4366-8918-7c7dd8726bf9","error":{"message":"fail to capture screenshot"}}
+ERROR 2023-07-23 13:39:06,210 connection.py _on_message     660 [71594233-d42b-4366-8918-7c7dd8726bf9]: fail to capture screenshot
+ERROR 2023-07-23 13:39:06,210 app.py     screen_shot     393 fail to capture screenshot
+INFO  2023-07-23 13:39:06,211 basenative.py wrapper         28  call IdeNative.screen_shot end
+WARNI 2023-07-23 13:39:06,211 minitest.py capture         697 E:\miniumcase\miniumcase\test\outputs\20230723133904\test_01\20230723133905838799\images\setup.png not exists
+INFO  2023-07-23 13:39:06,212 minitest.py _miniSetUp      393 =========case: test_01 start=========
+DEBUG 2023-07-23 13:39:08,213 page.py    wait_for        321 waitFor: 2.001497268676758 s
+INFO  2023-07-23 13:39:08,213 app.py     redirect_to     603 RedirectTo: /pages/assess/assessTotal
+DEBUG 2023-07-23 13:39:08,214 connection.py _safely_send    417 ASYNC_SEND > {"id":"866fc519-05ca-481f-a8a4-519943ed5e06","method":"App.callWxMethod","params":{"method":"redirectTo","args":[{"url":"/pages/assess/assessTotal"}]}}
+DEBUG 2023-07-23 13:39:08,231 connection.py _on_message     652 RECV < {"id":"866fc519-05ca-481f-a8a4-519943ed5e06","result":{"result":{"errMsg":"redirectTo:ok"}}}
+INFO  2023-07-23 13:39:08,232 connection.py _handle_async_msg 693 received async msg: 866fc519-05ca-481f-a8a4-519943ed5e06
+DEBUG 2023-07-23 13:39:08,448 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":89,"path":"pages/assess/assessTotal","query":{},"openType":"redirectTo"},1690090748414]}}
+INFO  2023-07-23 13:39:08,449 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 89, 'path': 'pages/assess/assessTotal', 'query': {}, 'openType': 'redirectTo'}, 1690090748414]}
+DEBUG 2023-07-23 13:39:10,463 page.py    wait_for        321 waitFor: 2.014259099960327 s
+INFO  2023-07-23 13:39:10,463 page.py    _get_elements_by_css 557 try to get elements: text
+DEBUG 2023-07-23 13:39:10,464 connection.py _safely_send    417 SEND > {"id":"bf93908c-9f04-47ed-9026-f211313e268a","method":"Page.getElements","params":{"selector":"text","pageId":89}}
+DEBUG 2023-07-23 13:39:10,467 connection.py _on_message     652 RECV < {"id":"bf93908c-9f04-47ed-9026-f211313e268a","result":{"elements":[{"elementId":"338aa96b-538c-4a70-9281-b8dd2e94eee2","tagName":"text"},{"elementId":"bbf7f347-afd4-4ed8-b332-076fea5e4794","tagName":"text"}]}}
+INFO  2023-07-23 13:39:10,468 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000026B95D568C0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000026B95D56560>]
+INFO  2023-07-23 13:39:10,468 page.py    _get_elements_by_css 557 try to get elements: text
+DEBUG 2023-07-23 13:39:10,469 connection.py _safely_send    417 SEND > {"id":"44ef40f7-3176-4647-8be4-6381ac32c269","method":"Page.getElements","params":{"selector":"text","pageId":89}}
+DEBUG 2023-07-23 13:39:10,470 connection.py _on_message     652 RECV < {"id":"44ef40f7-3176-4647-8be4-6381ac32c269","result":{"elements":[{"elementId":"338aa96b-538c-4a70-9281-b8dd2e94eee2","tagName":"text"},{"elementId":"bbf7f347-afd4-4ed8-b332-076fea5e4794","tagName":"text"}]}}
+INFO  2023-07-23 13:39:10,471 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000026B95D56620>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000026B95D56860>]
+DEBUG 2023-07-23 13:39:10,472 connection.py _safely_send    417 SEND > {"id":"a9a0a120-2454-4710-ac20-8978962775b6","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"338aa96b-538c-4a70-9281-b8dd2e94eee2","pageId":89}}
+DEBUG 2023-07-23 13:39:10,473 connection.py _on_message     652 RECV < {"id":"a9a0a120-2454-4710-ac20-8978962775b6","result":{"properties":["上传评估结果"]}}
+DEBUG 2023-07-23 13:39:10,474 minitest.py _miniTearDown   589 =========Current case Down: test_01=========
+INFO  2023-07-23 13:39:10,474 minitest.py capture         686 capture teardown.png
+INFO  2023-07-23 13:39:10,474 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-23 13:39:10,475 connection.py _safely_send    417 SEND > {"id":"60363332-b226-4756-bd57-0768a607095f","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-23 13:39:10,499 connection.py _on_message     652 RECV < {"id":"60363332-b226-4756-bd57-0768a607095f","error":{"message":"fail to capture screenshot"}}
+ERROR 2023-07-23 13:39:10,499 connection.py _on_message     660 [60363332-b226-4756-bd57-0768a607095f]: fail to capture screenshot
+ERROR 2023-07-23 13:39:10,500 app.py     screen_shot     393 fail to capture screenshot
+INFO  2023-07-23 13:39:10,500 basenative.py wrapper         28  call IdeNative.screen_shot end
+WARNI 2023-07-23 13:39:10,501 minitest.py capture         697 E:\miniumcase\miniumcase\test\outputs\20230723133904\test_01\20230723133905838799\images\teardown.png not exists
+INFO  2023-07-23 13:39:10,501 basenative.py wrapper         24  call BaseNative.get_start_up
+INFO  2023-07-23 13:39:10,501 basenative.py wrapper         28  call BaseNative.get_start_up end
+ERROR 2023-07-23 13:39:10,507 assertbase.py _get_stack_info 341 <bound method FirstTest.test_01 of <first_test.FirstTest testMethod=test_01>>
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\minium\framework\libs\unittest\case.py", line 265, in testPartExecutor
+    yield
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\minium\framework\libs\unittest\case.py", line 350, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "E:\miniumcase\miniumcase\test\first_test.py", line 35, in test_01
+    if self.page.get_elements("text")[i].text() == '自理能力':
+TypeError: 'str' object is not callable

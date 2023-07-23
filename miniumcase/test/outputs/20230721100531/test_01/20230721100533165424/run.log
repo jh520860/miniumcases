@@ -1,0 +1,52 @@
+INFO  2023-07-21 10:05:33,168 minitest.py _miniSetUp      340 =========Current case: test_01=========
+INFO  2023-07-21 10:05:33,169 minitest.py _miniSetUp      343 package info: E:.workspace.miniumcase.test.first_test, case info: FirstTest.test_01
+INFO  2023-07-21 10:05:33,170 basenative.py wrapper         24  call BaseNative.check_connection
+INFO  2023-07-21 10:05:33,171 basenative.py wrapper         28  call BaseNative.check_connection end
+INFO  2023-07-21 10:05:33,172 basenative.py wrapper         24  call BaseNative.back_to_miniprogram
+INFO  2023-07-21 10:05:33,173 basenative.py back_to_miniprogram 549 try back_to_miniprogram 3
+INFO  2023-07-21 10:05:33,174 basenative.py wrapper         28  call BaseNative.back_to_miniprogram end
+INFO  2023-07-21 10:05:33,175 app.py     relaunch        623 ReLaunch: /pages/account/mode
+DEBUG 2023-07-21 10:05:33,176 connection.py _safely_send    417 ASYNC_SEND > {"id":"a415c7cc-7122-4ba9-8e9d-c77dd8b68801","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/account/mode"}]}}
+DEBUG 2023-07-21 10:05:33,226 connection.py _on_message     652 RECV < {"id":"a415c7cc-7122-4ba9-8e9d-c77dd8b68801","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2023-07-21 10:05:33,227 connection.py _handle_async_msg 693 received async msg: a415c7cc-7122-4ba9-8e9d-c77dd8b68801
+DEBUG 2023-07-21 10:05:33,671 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":45,"path":"pages/account/mode","query":{},"openType":"reLaunch","__ts__":1689905133639},1689905133641]}}
+INFO  2023-07-21 10:05:33,673 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 45, 'path': 'pages/account/mode', 'query': {}, 'openType': 'reLaunch', '__ts__': 1689905133639}, 1689905133641]}
+INFO  2023-07-21 10:05:33,723 minitest.py capture         686 capture setup.png
+INFO  2023-07-21 10:05:33,724 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-21 10:05:33,725 connection.py _safely_send    417 SEND > {"id":"3306045a-e848-4d3b-ba8c-abbe7f173ea2","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-21 10:05:33,907 connection.py _on_message     650 RECV < {"id":"3306045a-e848-4d3b-ba8c-abbe7f173ea2","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAZ4AAALgCAIAAAAr3oZ0AAAAAXNSR0IArs4c6QAAIABJREFUeJzsvXuQJUd97/n9ZmZVnXP6dPc8uzUz0lhCgMRjZJDEtXHogsJG60CjG+s72BE85EV4vbuWI2wLJAgUG4HB/wgbJFgcexW7toW4FgbuGvneuxq49yLfBXsAYwvJaIwlEEYjocd0T89MT3efR1Vl5m//yKrTZ2Z6RjPSjPp0kz9GxedUZ2X9MivrV7988//+2xIAAJIiEjly5MjrgBlMG4HqL5EjR4689lkh2DmAROTIkSOvD+af7CuDoavORo4cOfLaZyUCMPxm5MiRI68Prr02opLIkSNHXvusgqGDDP4WOXLkyGue+Sf7qsEfUaJEibJuREEqJ45g5MiRI68Prrw2onLlIkeOHHkdsAJAULBs8yJHjhx5rT...
+INFO  2023-07-21 10:05:33,908 basenative.py wrapper         28  call IdeNative.screen_shot end
+INFO  2023-07-21 10:05:33,909 minitest.py _miniSetUp      393 =========case: test_01 start=========
+INFO  2023-07-21 10:05:33,910 app.py     redirect_to     603 RedirectTo: /pages/assess/assessBaseInfo
+DEBUG 2023-07-21 10:05:33,912 connection.py _safely_send    417 ASYNC_SEND > {"id":"ba0c4f0d-43a6-452d-86cc-f615f6ccf5d5","method":"App.callWxMethod","params":{"method":"redirectTo","args":[{"url":"/pages/assess/assessBaseInfo"}]}}
+DEBUG 2023-07-21 10:05:33,946 connection.py _on_message     652 RECV < {"id":"ba0c4f0d-43a6-452d-86cc-f615f6ccf5d5","result":{"result":{"errMsg":"redirectTo:ok"}}}
+INFO  2023-07-21 10:05:33,948 connection.py _handle_async_msg 693 received async msg: ba0c4f0d-43a6-452d-86cc-f615f6ccf5d5
+DEBUG 2023-07-21 10:05:34,802 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":46,"path":"pages/assess/assessBaseInfo","query":{},"openType":"redirectTo","__ts__":1689905134773},1689905134774]}}
+INFO  2023-07-21 10:05:34,804 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 46, 'path': 'pages/assess/assessBaseInfo', 'query': {}, 'openType': 'redirectTo', '__ts__': 1689905134773}, 1689905134774]}
+DEBUG 2023-07-21 10:05:36,816 page.py    wait_for        321 waitFor: 2.0114591121673584 s
+DEBUG 2023-07-21 10:05:36,923 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":47,"path":"pages/account/mode","query":{},"openType":"reLaunch","__ts__":1689905136898},1689905136900]}}
+INFO  2023-07-21 10:05:36,925 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 47, 'path': 'pages/account/mode', 'query': {}, 'openType': 'reLaunch', '__ts__': 1689905136898}, 1689905136900]}
+DEBUG 2023-07-21 10:05:37,834 page.py    wait_for        321 waitFor: 1.01377534866333 s
+INFO  2023-07-21 10:05:37,839 page.py    _get_elements_by_css 557 try to get elements: van-radio-group
+DEBUG 2023-07-21 10:05:37,841 connection.py _safely_send    417 SEND > {"id":"3d5e3675-7032-44e1-8dda-8e284f855ed0","method":"Page.getElements","params":{"selector":"van-radio-group","pageId":47}}
+DEBUG 2023-07-21 10:05:37,847 connection.py _on_message     652 RECV < {"id":"3d5e3675-7032-44e1-8dda-8e284f855ed0","result":{"elements":[]}}
+WARNI 2023-07-21 10:05:37,849 page.py    _get_elements_by_css 562 Could not found any element 'van-radio-group' you need
+DEBUG 2023-07-21 10:05:37,850 minitest.py _miniTearDown   589 =========Current case Down: test_01=========
+INFO  2023-07-21 10:05:37,851 minitest.py capture         686 capture teardown.png
+INFO  2023-07-21 10:05:37,852 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-21 10:05:37,853 connection.py _safely_send    417 SEND > {"id":"3932e9aa-b906-40a0-ae66-4d8618a6c414","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-21 10:05:37,984 connection.py _on_message     650 RECV < {"id":"3932e9aa-b906-40a0-ae66-4d8618a6c414","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAZ4AAALgCAIAAAAr3oZ0AAAAAXNSR0IArs4c6QAAIABJREFUeJzsvXuQJUd97/n9ZmZVnXP6dPc8uzUz0lhCgMRjZJDEtXHogsJG60CjG+s72BE85EV4vbuWI2wLJAgUG4HB/wgbJFgcexW7toW4FgbuGvneuxq49yLfBXsAYwvJaIwlEEYjocd0T89MT3efR1Vl5m//yKrTZ2Z6RjPSjPp0kz9GxedUZ2X9MivrV7988//+2xIAAJIiEjly5MjrgBlMG4HqL5EjR4689lkh2DmAROTIkSOvD+af7CuDoavORo4cOfLaZyUCMPxm5MiRI68Prr02opLIkSNHXvusgqGDDP4WOXLkyGue+Sf7qsEfUaJEibJuREEqJ45g5MiRI68Prrw2onLlIkeOHHkdsAJAULBs8yJHjhx5rT...
+INFO  2023-07-21 10:05:37,991 basenative.py wrapper         28  call IdeNative.screen_shot end
+INFO  2023-07-21 10:05:37,992 basenative.py wrapper         24  call BaseNative.get_start_up
+INFO  2023-07-21 10:05:37,993 basenative.py wrapper         28  call BaseNative.get_start_up end
+ERROR 2023-07-21 10:05:38,043 assertbase.py _get_stack_info 341 <bound method FirstTest.test_01 of <first_test.FirstTest testMethod=test_01>>
+Traceback (most recent call last):
+  File "E:\workspace\miniumcase\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 265, in testPartExecutor
+    yield
+  File "E:\workspace\miniumcase\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 350, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "E:\workspace\miniumcase\test\first_test.py", line 30, in test_01
+    self.page.get_elements("van-radio-group")[0].get_elements("van-radio")[1].get_element("view").get_element("van-icon").get_element("view").tap()
+IndexError: list index out of range

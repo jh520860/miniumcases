@@ -1,0 +1,50 @@
+INFO  2023-07-23 13:40:39,857 minitest.py _miniSetUp      340 =========Current case: test_01=========
+INFO  2023-07-23 13:40:39,858 minitest.py _miniSetUp      343 package info: E:.miniumcase.miniumcase.test.first_test, case info: FirstTest.test_01
+INFO  2023-07-23 13:40:39,858 basenative.py wrapper         24  call BaseNative.check_connection
+INFO  2023-07-23 13:40:39,859 basenative.py wrapper         28  call BaseNative.check_connection end
+INFO  2023-07-23 13:40:39,859 basenative.py wrapper         24  call BaseNative.back_to_miniprogram
+INFO  2023-07-23 13:40:39,859 basenative.py back_to_miniprogram 549 try back_to_miniprogram 3
+INFO  2023-07-23 13:40:39,859 basenative.py wrapper         28  call BaseNative.back_to_miniprogram end
+INFO  2023-07-23 13:40:39,860 app.py     relaunch        623 ReLaunch: /pages/account/mode
+DEBUG 2023-07-23 13:40:39,860 connection.py _safely_send    417 ASYNC_SEND > {"id":"183e4576-2662-44df-88bd-893eac9399df","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/account/mode"}]}}
+DEBUG 2023-07-23 13:40:39,870 connection.py _on_message     652 RECV < {"id":"183e4576-2662-44df-88bd-893eac9399df","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2023-07-23 13:40:39,871 connection.py _handle_async_msg 693 received async msg: 183e4576-2662-44df-88bd-893eac9399df
+DEBUG 2023-07-23 13:40:40,206 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":103,"path":"pages/account/mode","query":{},"openType":"reLaunch"},1690090840178]}}
+INFO  2023-07-23 13:40:40,207 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 103, 'path': 'pages/account/mode', 'query': {}, 'openType': 'reLaunch'}, 1690090840178]}
+INFO  2023-07-23 13:40:40,208 minitest.py capture         686 capture setup.png
+INFO  2023-07-23 13:40:40,209 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-23 13:40:40,209 connection.py _safely_send    417 SEND > {"id":"7115f856-14bd-4354-a662-0c32b2220b76","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-23 13:40:40,297 connection.py _on_message     650 RECV < {"id":"7115f856-14bd-4354-a662-0c32b2220b76","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAawAAAOeCAIAAADQh7N0AAAAAXNSR0IArs4c6QAAIABJREFUeJzs3XmUXGd57/vf8+7qbnW3ujV0qyXLwpYHwA7YSoIwIQslTphO3Lk5Aeee2Jwr52Jw1g3hBtmsSxCHrOTccBDH62ALEpxz48QJVmJMThgytAiDGSIDiSwDkgHb2FgeNHe3hh7Vqq793D/evauqWy3ZCSy77Pf7W6x3fertXbt2F+Wnn9q165X96Y6qJElm5u4YY5yUrV4ECSEkwQRJZibJTBhjnJrt9h1Vl0xiZGRkTHAMLpnJJTPDGOPUXHaCsSTG6ogxxsk4doLmLtVrJMYYJ2O7/d6qXM/xm3JGRkbG52gMdVnxFhljjBNyUycYgzHGKTnU66JJGGOcmu3P7q16WRlNwhjjpBw81kXJZBhjnJqLTjDelo...
+INFO  2023-07-23 13:40:40,298 basenative.py wrapper         28  call IdeNative.screen_shot end
+INFO  2023-07-23 13:40:40,298 minitest.py _miniSetUp      393 =========case: test_01 start=========
+DEBUG 2023-07-23 13:40:42,307 page.py    wait_for        321 waitFor: 2.0082170963287354 s
+DEBUG 2023-07-23 13:40:44,313 page.py    wait_for        321 waitFor: 2.005635976791382 s
+INFO  2023-07-23 13:40:44,313 page.py    _get_elements_by_css 557 try to get elements: text
+DEBUG 2023-07-23 13:40:44,314 connection.py _safely_send    417 SEND > {"id":"f2068159-7ec1-495d-93c7-3e15e1744ed3","method":"Page.getElements","params":{"selector":"text","pageId":103}}
+DEBUG 2023-07-23 13:40:44,317 connection.py _on_message     652 RECV < {"id":"f2068159-7ec1-495d-93c7-3e15e1744ed3","result":{"elements":[{"elementId":"7b36328d-2a5b-46c6-99b5-70c687cdd0dc","tagName":"text"},{"elementId":"059899d8-7063-4c01-a80a-c839dffda1eb","tagName":"text"},{"elementId":"e9aa52c9-ce73-445a-bc9c-94eb7baa0d5c","tagName":"text"},{"elementId":"29c24413-99b4-419b-b406-71580e08ca43","tagName":"text"}]}}
+INFO  2023-07-23 13:40:44,318 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000212A4216650>, <minium.miniprogram.base_driver.element.BaseElement object at 0x00000212A42166B0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x00000212A4215C00>, <minium.miniprogram.base_driver.element.BaseElement object at 0x00000212A4216110>]
+INFO  2023-07-23 13:40:44,318 page.py    _get_elements_by_css 557 try to get elements: text
+DEBUG 2023-07-23 13:40:44,319 connection.py _safely_send    417 SEND > {"id":"5e446e88-8af1-4bef-9600-f4707703f687","method":"Page.getElements","params":{"selector":"text","pageId":103}}
+DEBUG 2023-07-23 13:40:44,321 connection.py _on_message     652 RECV < {"id":"5e446e88-8af1-4bef-9600-f4707703f687","result":{"elements":[{"elementId":"7b36328d-2a5b-46c6-99b5-70c687cdd0dc","tagName":"text"},{"elementId":"059899d8-7063-4c01-a80a-c839dffda1eb","tagName":"text"},{"elementId":"e9aa52c9-ce73-445a-bc9c-94eb7baa0d5c","tagName":"text"},{"elementId":"29c24413-99b4-419b-b406-71580e08ca43","tagName":"text"}]}}
+INFO  2023-07-23 13:40:44,321 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000212A42167A0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x00000212A4216920>, <minium.miniprogram.base_driver.element.BaseElement object at 0x00000212A4215FF0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x00000212A42164A0>]
+DEBUG 2023-07-23 13:40:44,322 connection.py _safely_send    417 SEND > {"id":"7bf69e64-5416-483f-872b-10bed525b6ae","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"7b36328d-2a5b-46c6-99b5-70c687cdd0dc","pageId":103}}
+DEBUG 2023-07-23 13:40:44,323 connection.py _on_message     652 RECV < {"id":"7bf69e64-5416-483f-872b-10bed525b6ae","result":{"properties":["老年人能力评估"]}}
+DEBUG 2023-07-23 13:40:44,324 minitest.py _miniTearDown   589 =========Current case Down: test_01=========
+INFO  2023-07-23 13:40:44,324 minitest.py capture         686 capture teardown.png
+INFO  2023-07-23 13:40:44,324 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-23 13:40:44,325 connection.py _safely_send    417 SEND > {"id":"841190b8-14a1-4d60-ae32-f16191f90bc9","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-23 13:40:44,379 connection.py _on_message     650 RECV < {"id":"841190b8-14a1-4d60-ae32-f16191f90bc9","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAawAAAOeCAIAAADQh7N0AAAAAXNSR0IArs4c6QAAIABJREFUeJzsvXuUXdV95/n97n0e9966VaUqSSUhXgI/gLQRsS2nYydqk/TYaVOZNSumZ2LoiKzgZOIwawVBzxAr43hmVtyRm9VthP8ga+WBE5TgdGI76VkpPGPiBEY2TowIRjgG2nZ4CJCqpFKpqu7rPPb+zR/7nFu3SiUhhKCudPdvwdan9j1nn9/ZZ5/f+Z39+B3+3v4MAACSIuLZs2fPA8XsGkEvXrx4GUBRAEgCIOHZs2fPg8b8/f2ZAAR86lOf+nQAUyUACQFIevbs2fOgcekJOpPorKNnz549Dww7T5AiQNdGevbs2fPAMH//GxkEa/xS7lOf+tSna5SqLrF4Rfbs2bPnAeIeT9CJZ8+ePQ8Sq65dJODZs2fPg8...
+INFO  2023-07-23 13:40:44,380 basenative.py wrapper         28  call IdeNative.screen_shot end
+INFO  2023-07-23 13:40:44,381 basenative.py wrapper         24  call BaseNative.get_start_up
+INFO  2023-07-23 13:40:44,381 basenative.py wrapper         28  call BaseNative.get_start_up end
+ERROR 2023-07-23 13:40:44,386 assertbase.py _get_stack_info 341 <bound method FirstTest.test_01 of <first_test.FirstTest testMethod=test_01>>
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\minium\framework\libs\unittest\case.py", line 265, in testPartExecutor
+    yield
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\minium\framework\libs\unittest\case.py", line 350, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "E:\miniumcase\miniumcase\test\first_test.py", line 35, in test_01
+    if str(self.page.get_elements("text")[i].text()) == '练习模式':
+TypeError: 'str' object is not callable

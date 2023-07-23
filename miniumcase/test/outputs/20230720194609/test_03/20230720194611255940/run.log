@@ -1,0 +1,89 @@
+INFO  2023-07-20 19:46:11,262 minitest.py _miniSetUp      340 =========Current case: test_03=========
+INFO  2023-07-20 19:46:11,264 minitest.py _miniSetUp      343 package info: E:.workspace.miniumcase.test.first_test, case info: FirstTest.test_03
+INFO  2023-07-20 19:46:11,266 basenative.py wrapper         24  call BaseNative.check_connection
+INFO  2023-07-20 19:46:11,269 basenative.py wrapper         28  call BaseNative.check_connection end
+INFO  2023-07-20 19:46:11,271 basenative.py wrapper         24  call BaseNative.back_to_miniprogram
+INFO  2023-07-20 19:46:11,275 basenative.py back_to_miniprogram 549 try back_to_miniprogram 3
+INFO  2023-07-20 19:46:11,281 basenative.py wrapper         28  call BaseNative.back_to_miniprogram end
+INFO  2023-07-20 19:46:11,284 app.py     relaunch        623 ReLaunch: /pages/account/mode
+DEBUG 2023-07-20 19:46:11,288 connection.py _safely_send    417 ASYNC_SEND > {"id":"b82f4ed3-15f4-4a26-aa07-816f6e0be466","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/account/mode"}]}}
+DEBUG 2023-07-20 19:46:11,347 connection.py _on_message     652 RECV < {"id":"b82f4ed3-15f4-4a26-aa07-816f6e0be466","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2023-07-20 19:46:11,349 connection.py _handle_async_msg 693 received async msg: b82f4ed3-15f4-4a26-aa07-816f6e0be466
+DEBUG 2023-07-20 19:46:12,596 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":513,"path":"pages/account/mode","query":{},"openType":"reLaunch","__ts__":1689853572583},1689853572584]}}
+INFO  2023-07-20 19:46:12,599 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 513, 'path': 'pages/account/mode', 'query': {}, 'openType': 'reLaunch', '__ts__': 1689853572583}, 1689853572584]}
+INFO  2023-07-20 19:46:12,600 minitest.py capture         686 capture setup.png
+INFO  2023-07-20 19:46:12,601 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-20 19:46:12,603 connection.py _safely_send    417 SEND > {"id":"514915a0-b641-4be0-ad21-79d73b12612b","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-20 19:46:12,771 connection.py _on_message     650 RECV < {"id":"514915a0-b641-4be0-ad21-79d73b12612b","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAZ4AAALgCAIAAAAr3oZ0AAAAAXNSR0IArs4c6QAAIABJREFUeJzt3XmUZGWZ7/vf80ZkVlaONWUmM7SMDkU3yDk2LlpwtbRKIfYph9YWW2x1nQXeVia9VK91W+177ylspfBqN9zVKo1t2doO2EdJVKSPoCU4QJVSMshYFMWQmZWVVTlnRsR+7h9774jIoQCFS2a8+f0t1utn79ixY0dU+Oaz3z2E/fNPSpIkmZm7Y4xxBLa0azMpewRjjBvfQWk/J5kJY4zjsH1+Wynt6LK5GGPc+A7ukqXThjHGcTiv2kxZMMa48R3Sjk5efQxjjBve9vlt2ckfhBASTYI8K+JMhjHGcTir2kxZKYcxxhE4SDKZq9bnYYxxo9u+wFgbISS6hGr9JjOMMY7DVG2EkAiTXUMqZTupGGMcge0LPy...
+INFO  2023-07-20 19:46:12,774 basenative.py wrapper         28  call IdeNative.screen_shot end
+INFO  2023-07-20 19:46:12,775 minitest.py _miniSetUp      393 =========case: test_03 start=========
+INFO  2023-07-20 19:46:12,777 page.py    _get_elements_by_css 557 try to get elements: [class='btn_text']
+DEBUG 2023-07-20 19:46:12,779 connection.py _safely_send    417 SEND > {"id":"cc6b263a-77ab-47b9-ae92-6e386bf423e5","method":"Page.getElements","params":{"selector":"[class='btn_text']","pageId":513}}
+DEBUG 2023-07-20 19:46:12,866 connection.py _on_message     652 RECV < {"id":"cc6b263a-77ab-47b9-ae92-6e386bf423e5","result":{"elements":[{"elementId":"2809363a-98fc-408c-9f83-e4f1a51ff1eb","tagName":"text"},{"elementId":"6b4938f5-0be0-4bee-b192-09f44b4aa753","tagName":"text"},{"elementId":"60d508f6-a235-4773-bd7c-4486b0b773ca","tagName":"text"}]}}
+INFO  2023-07-20 19:46:12,868 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4C9D0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4CF40>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4D090>]
+DEBUG 2023-07-20 19:46:12,870 connection.py _safely_send    417 SEND > {"id":"7806c306-9829-4117-8989-ac4c7fb4b2ca","method":"Element.tap","params":{"elementId":"60d508f6-a235-4773-bd7c-4486b0b773ca","pageId":513}}
+DEBUG 2023-07-20 19:46:12,890 connection.py _on_message     652 RECV < {"id":"7806c306-9829-4117-8989-ac4c7fb4b2ca","result":{}}
+DEBUG 2023-07-20 19:46:13,544 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":514,"path":"pages/assess/theoryExam","query":{},"openType":"navigateTo","__ts__":1689853573499},1689853573502]}}
+INFO  2023-07-20 19:46:13,546 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 514, 'path': 'pages/assess/theoryExam', 'query': {}, 'openType': 'navigateTo', '__ts__': 1689853573499}, 1689853573502]}
+DEBUG 2023-07-20 19:46:13,891 page.py    wait_for        321 waitFor: 1.0004286766052246 s
+INFO  2023-07-20 19:46:13,894 page.py    _get_elements_by_css 557 try to get elements: view
+DEBUG 2023-07-20 19:46:13,895 connection.py _safely_send    417 SEND > {"id":"9a63b7c5-3312-4745-b59d-8b21f005d45b","method":"Page.getElements","params":{"selector":"view","pageId":514}}
+DEBUG 2023-07-20 19:46:13,899 connection.py _on_message     652 RECV < {"id":"9a63b7c5-3312-4745-b59d-8b21f005d45b","result":{"elements":[{"elementId":"334c8d39-ecf1-430b-ab09-0640b1bcba69","tagName":"view"},{"elementId":"735d3ad5-4acc-4092-98ba-0efd77db123b","tagName":"view"}]}}
+INFO  2023-07-20 19:46:13,901 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4CFA0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4CC10>]
+DEBUG 2023-07-20 19:46:13,903 connection.py _safely_send    417 SEND > {"id":"812eebb1-de12-488f-89d3-f301721a22e4","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"334c8d39-ecf1-430b-ab09-0640b1bcba69","pageId":514}}
+DEBUG 2023-07-20 19:46:13,923 connection.py _on_message     652 RECV < {"id":"812eebb1-de12-488f-89d3-f301721a22e4","result":{"properties":["考试记录"]}}
+INFO  2023-07-20 19:46:13,925 page.py    _get_elements_by_css 557 try to get elements: image[mode='aspectFit']
+DEBUG 2023-07-20 19:46:13,926 connection.py _safely_send    417 SEND > {"id":"bb1991fe-fb32-40a6-83b2-e7feab73c9e5","method":"Page.getElements","params":{"selector":"image[mode='aspectFit']","pageId":514}}
+DEBUG 2023-07-20 19:46:13,934 connection.py _on_message     652 RECV < {"id":"bb1991fe-fb32-40a6-83b2-e7feab73c9e5","result":{"elements":[{"elementId":"ccaed945-89ea-4a0b-b19d-4a9ec91dcf14","tagName":"image"}]}}
+INFO  2023-07-20 19:46:13,935 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4CC40>]
+DEBUG 2023-07-20 19:46:13,937 connection.py _safely_send    417 SEND > {"id":"de830cde-28e2-41e6-adfb-c6c06614a169","method":"Element.tap","params":{"elementId":"ccaed945-89ea-4a0b-b19d-4a9ec91dcf14","pageId":514}}
+DEBUG 2023-07-20 19:46:13,955 connection.py _on_message     652 RECV < {"id":"de830cde-28e2-41e6-adfb-c6c06614a169","result":{}}
+DEBUG 2023-07-20 19:46:16,959 page.py    wait_for        321 waitFor: 3.0006725788116455 s
+INFO  2023-07-20 19:46:16,961 page.py    _get_elements_by_css 557 try to get elements: view
+DEBUG 2023-07-20 19:46:16,962 connection.py _safely_send    417 SEND > {"id":"3a069437-a804-4925-8a09-4b1b1cde27cf","method":"Page.getElements","params":{"selector":"view","pageId":514}}
+DEBUG 2023-07-20 19:46:16,966 connection.py _on_message     652 RECV < {"id":"3a069437-a804-4925-8a09-4b1b1cde27cf","result":{"elements":[{"elementId":"334c8d39-ecf1-430b-ab09-0640b1bcba69","tagName":"view"},{"elementId":"735d3ad5-4acc-4092-98ba-0efd77db123b","tagName":"view"}]}}
+INFO  2023-07-20 19:46:16,968 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4CEE0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4CF70>]
+DEBUG 2023-07-20 19:46:16,969 connection.py _safely_send    417 SEND > {"id":"37da716d-7b99-460d-8cfa-bffada6aff10","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"334c8d39-ecf1-430b-ab09-0640b1bcba69","pageId":514}}
+DEBUG 2023-07-20 19:46:16,973 connection.py _on_message     652 RECV < {"id":"37da716d-7b99-460d-8cfa-bffada6aff10","result":{"properties":["考试记录"]}}
+DEBUG 2023-07-20 19:46:16,975 connection.py _safely_send    417 SEND > {"id":"77e9e3b7-1377-439c-b41b-45b79ad50481","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"735d3ad5-4acc-4092-98ba-0efd77db123b","pageId":514}}
+DEBUG 2023-07-20 19:46:16,979 connection.py _on_message     652 RECV < {"id":"77e9e3b7-1377-439c-b41b-45b79ad50481","result":{"properties":["开始考试"]}}
+INFO  2023-07-20 19:46:17,981 page.py    _get_elements_by_css 557 try to get elements: view
+DEBUG 2023-07-20 19:46:17,982 connection.py _safely_send    417 SEND > {"id":"3c393a05-1665-4f90-b1bf-6c8ad0e4e9eb","method":"Page.getElements","params":{"selector":"view","pageId":514}}
+DEBUG 2023-07-20 19:46:17,986 connection.py _on_message     652 RECV < {"id":"3c393a05-1665-4f90-b1bf-6c8ad0e4e9eb","result":{"elements":[{"elementId":"334c8d39-ecf1-430b-ab09-0640b1bcba69","tagName":"view"},{"elementId":"735d3ad5-4acc-4092-98ba-0efd77db123b","tagName":"view"}]}}
+INFO  2023-07-20 19:46:17,988 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4CC70>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4D210>]
+DEBUG 2023-07-20 19:46:17,990 connection.py _safely_send    417 SEND > {"id":"6a51fb18-064b-4cce-8a4e-32dc4f446b66","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"334c8d39-ecf1-430b-ab09-0640b1bcba69","pageId":514}}
+DEBUG 2023-07-20 19:46:17,994 connection.py _on_message     652 RECV < {"id":"6a51fb18-064b-4cce-8a4e-32dc4f446b66","result":{"properties":["考试记录"]}}
+DEBUG 2023-07-20 19:46:17,996 connection.py _safely_send    417 SEND > {"id":"8f59f165-63fc-4761-9fac-a7490902173a","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"735d3ad5-4acc-4092-98ba-0efd77db123b","pageId":514}}
+DEBUG 2023-07-20 19:46:18,000 connection.py _on_message     652 RECV < {"id":"8f59f165-63fc-4761-9fac-a7490902173a","result":{"properties":["开始考试"]}}
+INFO  2023-07-20 19:46:19,003 page.py    _get_elements_by_css 557 try to get elements: view
+DEBUG 2023-07-20 19:46:19,005 connection.py _safely_send    417 SEND > {"id":"ed5b5089-1c7b-44d0-ba02-a5165dd1ba06","method":"Page.getElements","params":{"selector":"view","pageId":514}}
+DEBUG 2023-07-20 19:46:19,009 connection.py _on_message     652 RECV < {"id":"ed5b5089-1c7b-44d0-ba02-a5165dd1ba06","result":{"elements":[{"elementId":"334c8d39-ecf1-430b-ab09-0640b1bcba69","tagName":"view"},{"elementId":"735d3ad5-4acc-4092-98ba-0efd77db123b","tagName":"view"}]}}
+INFO  2023-07-20 19:46:19,011 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4C220>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4D1E0>]
+DEBUG 2023-07-20 19:46:19,013 connection.py _safely_send    417 SEND > {"id":"4f098733-9fc8-40a3-a27c-3a37629786c9","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"334c8d39-ecf1-430b-ab09-0640b1bcba69","pageId":514}}
+DEBUG 2023-07-20 19:46:19,019 connection.py _on_message     652 RECV < {"id":"4f098733-9fc8-40a3-a27c-3a37629786c9","result":{"properties":["考试记录"]}}
+DEBUG 2023-07-20 19:46:19,021 connection.py _safely_send    417 SEND > {"id":"34e0770e-4c06-4098-8ddf-ab73173d5b57","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"735d3ad5-4acc-4092-98ba-0efd77db123b","pageId":514}}
+DEBUG 2023-07-20 19:46:19,025 connection.py _on_message     652 RECV < {"id":"34e0770e-4c06-4098-8ddf-ab73173d5b57","result":{"properties":["开始考试"]}}
+INFO  2023-07-20 19:46:20,030 page.py    _get_elements_by_css 557 try to get elements: view
+DEBUG 2023-07-20 19:46:20,031 connection.py _safely_send    417 SEND > {"id":"b3a2b919-c21d-476c-bed8-9b927700c34f","method":"Page.getElements","params":{"selector":"view","pageId":514}}
+DEBUG 2023-07-20 19:46:20,036 connection.py _on_message     652 RECV < {"id":"b3a2b919-c21d-476c-bed8-9b927700c34f","result":{"elements":[{"elementId":"334c8d39-ecf1-430b-ab09-0640b1bcba69","tagName":"view"},{"elementId":"735d3ad5-4acc-4092-98ba-0efd77db123b","tagName":"view"}]}}
+INFO  2023-07-20 19:46:20,038 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4CF70>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4D030>]
+DEBUG 2023-07-20 19:46:20,040 connection.py _safely_send    417 SEND > {"id":"118d2a31-aa16-4f5e-842e-9df67c0e7162","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"334c8d39-ecf1-430b-ab09-0640b1bcba69","pageId":514}}
+DEBUG 2023-07-20 19:46:20,043 connection.py _on_message     652 RECV < {"id":"118d2a31-aa16-4f5e-842e-9df67c0e7162","result":{"properties":["考试记录"]}}
+DEBUG 2023-07-20 19:46:20,045 connection.py _safely_send    417 SEND > {"id":"2f63c669-7931-489d-8557-70f64e1cff3b","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"735d3ad5-4acc-4092-98ba-0efd77db123b","pageId":514}}
+DEBUG 2023-07-20 19:46:20,049 connection.py _on_message     652 RECV < {"id":"2f63c669-7931-489d-8557-70f64e1cff3b","result":{"properties":["开始考试"]}}
+INFO  2023-07-20 19:46:21,052 page.py    _get_elements_by_css 557 try to get elements: view
+DEBUG 2023-07-20 19:46:21,060 connection.py _safely_send    417 SEND > {"id":"0241bc01-35ed-42e1-bddd-9722b3d35965","method":"Page.getElements","params":{"selector":"view","pageId":514}}
+DEBUG 2023-07-20 19:46:21,077 connection.py _on_message     652 RECV < {"id":"0241bc01-35ed-42e1-bddd-9722b3d35965","result":{"elements":[{"elementId":"334c8d39-ecf1-430b-ab09-0640b1bcba69","tagName":"view"},{"elementId":"735d3ad5-4acc-4092-98ba-0efd77db123b","tagName":"view"}]}}
+INFO  2023-07-20 19:46:21,079 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4CC10>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4C6A0>]
+DEBUG 2023-07-20 19:46:21,081 connection.py _safely_send    417 SEND > {"id":"73b5a90e-57a8-4d15-94dc-80d7c8a0755d","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"334c8d39-ecf1-430b-ab09-0640b1bcba69","pageId":514}}
+DEBUG 2023-07-20 19:46:21,095 connection.py _on_message     652 RECV < {"id":"73b5a90e-57a8-4d15-94dc-80d7c8a0755d","result":{"properties":["考试记录"]}}
+DEBUG 2023-07-20 19:46:21,099 connection.py _safely_send    417 SEND > {"id":"3696a756-be15-4f44-a0f1-08b8bf1fe588","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"735d3ad5-4acc-4092-98ba-0efd77db123b","pageId":514}}
+DEBUG 2023-07-20 19:46:21,109 connection.py _on_message     652 RECV < {"id":"3696a756-be15-4f44-a0f1-08b8bf1fe588","result":{"properties":["开始考试"]}}
+INFO  2023-07-20 19:46:22,118 page.py    _get_elements_by_css 557 try to get elements: view
+DEBUG 2023-07-20 19:46:22,121 connection.py _safely_send    417 SEND > {"id":"2ffe2a86-3ff9-4096-8f31-b45f01e66d40","method":"Page.getElements","params":{"selector":"view","pageId":514}}
+DEBUG 2023-07-20 19:46:22,127 connection.py _on_message     652 RECV < {"id":"2ffe2a86-3ff9-4096-8f31-b45f01e66d40","result":{"elements":[{"elementId":"334c8d39-ecf1-430b-ab09-0640b1bcba69","tagName":"view"},{"elementId":"735d3ad5-4acc-4092-98ba-0efd77db123b","tagName":"view"}]}}
+INFO  2023-07-20 19:46:22,129 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4CC70>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000023475E4D240>]
+DEBUG 2023-07-20 19:46:22,135 connection.py _safely_send    417 SEND > {"id":"37652b9f-4947-413a-a357-9eb086f36965","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"334c8d39-ecf1-430b-ab09-0640b1bcba69","pageId":514}}
+DEBUG 2023-07-20 19:46:22,153 connection.py _on_message     652 RECV < {"id":"37652b9f-4947-413a-a357-9eb086f36965","result":{"properties":["考试记录"]}}
+DEBUG 2023-07-20 19:46:22,155 connection.py _safely_send    417 SEND > {"id":"118fa48e-c4af-4b70-a856-022b5d815e2e","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"735d3ad5-4acc-4092-98ba-0efd77db123b","pageId":514}}
+DEBUG 2023-07-20 19:46:22,166 connection.py _on_message     652 RECV < {"id":"118fa48e-c4af-4b70-a856-022b5d815e2e","result":{"properties":["开始考试"]}}

@@ -1,0 +1,21 @@
+INFO  2023-07-23 13:58:55,697 minitest.py _miniSetUp      340 =========Current case: test_01=========
+INFO  2023-07-23 13:58:55,697 minitest.py _miniSetUp      343 package info: E:.miniumcase.miniumcase.test.first_test, case info: FirstTest.test_01
+INFO  2023-07-23 13:58:55,698 basenative.py wrapper         24  call BaseNative.check_connection
+INFO  2023-07-23 13:58:55,699 basenative.py wrapper         28  call BaseNative.check_connection end
+INFO  2023-07-23 13:58:55,699 basenative.py wrapper         24  call BaseNative.back_to_miniprogram
+INFO  2023-07-23 13:58:55,699 basenative.py back_to_miniprogram 549 try back_to_miniprogram 3
+INFO  2023-07-23 13:58:55,699 basenative.py wrapper         28  call BaseNative.back_to_miniprogram end
+INFO  2023-07-23 13:58:55,699 app.py     relaunch        623 ReLaunch: /pages/account/mode
+DEBUG 2023-07-23 13:58:55,700 connection.py _safely_send    417 ASYNC_SEND > {"id":"e0a6e81e-face-4bbc-8757-904b225df3a3","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/account/mode"}]}}
+DEBUG 2023-07-23 13:58:55,714 connection.py _on_message     652 RECV < {"id":"e0a6e81e-face-4bbc-8757-904b225df3a3","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2023-07-23 13:58:55,715 connection.py _handle_async_msg 693 received async msg: e0a6e81e-face-4bbc-8757-904b225df3a3
+DEBUG 2023-07-23 13:58:56,043 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":120,"path":"pages/account/mode","query":{},"openType":"reLaunch"},1690091936014]}}
+INFO  2023-07-23 13:58:56,044 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 120, 'path': 'pages/account/mode', 'query': {}, 'openType': 'reLaunch'}, 1690091936014]}
+INFO  2023-07-23 13:58:56,045 minitest.py capture         686 capture setup.png
+INFO  2023-07-23 13:58:56,045 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-23 13:58:56,046 connection.py _safely_send    417 SEND > {"id":"6462b2be-68c1-4810-90a7-64bb14ef2719","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-23 13:58:56,089 connection.py _on_message     650 RECV < {"id":"6462b2be-68c1-4810-90a7-64bb14ef2719","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAawAAAOeCAIAAADQh7N0AAAAAXNSR0IArs4c6QAAIABJREFUeJzs3XmUXGd57/vf8+7qbnW3ujV0qyXLwpYHwA7YSoIwIQslTphO3Lk5Aeee2Jwr52Jw1g3hBtmsSxCHrOTccBDH62ALEpxz48QJVmJMThgytAiDGSIDiSwDkgHb2FgeNHe3hh7Vqq793D/evauqWy3ZCSy77Pf7W6x3fertXbt2F+Wnn9q165X96Y6qJElm5u4YY5yUrV4ECSEkwQRJZibJTBhjnJrt9h1Vl0xiZGRkTHAMLpnJJTPDGOPUXHaCsSTG6ogxxsk4doLmLtVrJMYYJ2O7/d6qXM/xm3JGRkbG52gMdVnxFhljjBNyUycYgzHGKTnU66JJGGOcmu3P7q16WRlNwhjjpBw81kXJZBhjnJqLTjDelo...
+INFO  2023-07-23 13:58:56,090 basenative.py wrapper         28  call IdeNative.screen_shot end
+INFO  2023-07-23 13:58:56,090 minitest.py _miniSetUp      393 =========case: test_01 start=========
+DEBUG 2023-07-23 13:58:58,097 page.py    wait_for        321 waitFor: 2.0069689750671387 s
+DEBUG 2023-07-23 13:59:00,112 page.py    wait_for        321 waitFor: 2.0145771503448486 s

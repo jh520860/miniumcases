@@ -1,0 +1,31 @@
+{
+  "project_path": "E://assessment-mini-practice/assessment-mini-practice",
+  "dev_tool_path": "F://微信开发工具/微信web开发者工具/cli.bat",
+  "debug_mode": "debug",
+  "test_port": 9420,
+  "platform": "ide",
+  "app": "wx",
+  "assert_capture": true,
+  "request_timeout": 60,
+  "remote_connect_timeout": 300,
+  "auto_relaunch": false,
+  "enable_app_log": true,
+  "mock_native_modal": {
+    "showModal":{
+      "title": "开始考试",
+      "content": "确认准备完毕开始考试吗？"
+    },
+    "showModal":{
+      "title": "提示",
+      "content": "确认完成答题并交卷吗？"
+    },
+    "showModal":{
+      "title": "试卷提交成功！",
+      "content": "点击确认返回首页"
+    },
+    "showModal":{
+      "title": "提示",
+      "content": "练习数据将被清除，返回练习模式开启新练习!"
+    }
+  }
+}

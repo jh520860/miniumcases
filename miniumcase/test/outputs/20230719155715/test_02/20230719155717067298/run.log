@@ -1,0 +1,46 @@
+INFO  2023-07-19 15:57:17,160 minitest.py _miniSetUp      340 =========Current case: test_02=========
+INFO  2023-07-19 15:57:17,163 minitest.py _miniSetUp      343 package info: E:.workspace.miniumcase.test.first_test, case info: FirstTest.test_02
+INFO  2023-07-19 15:57:17,165 basenative.py wrapper         24  call BaseNative.check_connection
+INFO  2023-07-19 15:57:17,166 basenative.py wrapper         28  call BaseNative.check_connection end
+INFO  2023-07-19 15:57:17,167 basenative.py wrapper         24  call BaseNative.back_to_miniprogram
+INFO  2023-07-19 15:57:17,168 basenative.py back_to_miniprogram 549 try back_to_miniprogram 3
+INFO  2023-07-19 15:57:17,169 basenative.py wrapper         28  call BaseNative.back_to_miniprogram end
+INFO  2023-07-19 15:57:17,171 app.py     relaunch        623 ReLaunch: /pages/account/mode
+DEBUG 2023-07-19 15:57:17,172 connection.py _safely_send    417 ASYNC_SEND > {"id":"727a8838-a918-4c11-8acf-8c8e1bae28dd","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/account/mode"}]}}
+DEBUG 2023-07-19 15:57:17,207 connection.py _on_message     652 RECV < {"id":"727a8838-a918-4c11-8acf-8c8e1bae28dd","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2023-07-19 15:57:17,209 connection.py _handle_async_msg 693 received async msg: 727a8838-a918-4c11-8acf-8c8e1bae28dd
+DEBUG 2023-07-19 15:57:17,789 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":17,"path":"pages/account/mode","query":{},"openType":"reLaunch","__ts__":1689753437773},1689753437774]}}
+INFO  2023-07-19 15:57:17,791 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 17, 'path': 'pages/account/mode', 'query': {}, 'openType': 'reLaunch', '__ts__': 1689753437773}, 1689753437774]}
+INFO  2023-07-19 15:57:17,793 minitest.py capture         686 capture setup.png
+INFO  2023-07-19 15:57:17,794 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-19 15:57:17,795 connection.py _safely_send    417 SEND > {"id":"ce8935f3-1ece-4002-8775-9d2871fdb4ca","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-19 15:57:17,955 connection.py _on_message     650 RECV < {"id":"ce8935f3-1ece-4002-8775-9d2871fdb4ca","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAZ4AAALgCAIAAAAr3oZ0AAAAAXNSR0IArs4c6QAAIABJREFUeJzt3XuUXWWd5//P99mn7qnKpSqVhAQiRBQd0NjtCN0M2G3/hNUNyjT0tAPKLHVmWmH1r6V/0wb9jd3/6CwF7DXqbxra7mmwRwV1hBY02oiXMYgQjBIEuQchJCSV1CWpe9U5Z39/f+y9zzlVqYg2LKrOU+/PYj289j7n7LNrp9ZT3/Ps/exjf3d3WZIkM3N33OTe9f2LLrhTOv2/PPSuc/uP9/zxu9/7sXsv/K/bLu4u1u/98rrrtf2af/+vf5X3evZL/ddr+5W6YMcJD7/rnLULPOeJT139QV15+1Un5esHdl97xsNnPXT5m9f5Y//9Q9s+roacd+3A7512zHs9/qkPbfvZpTfe9PreOev3fnnd9c/e8JGrL1...
+INFO  2023-07-19 15:57:17,957 basenative.py wrapper         28  call IdeNative.screen_shot end
+INFO  2023-07-19 15:57:17,959 minitest.py _miniSetUp      393 =========case: test_02 start=========
+DEBUG 2023-07-19 15:57:19,962 page.py    wait_for        321 waitFor: 2.000230550765991 s
+DEBUG 2023-07-19 15:57:20,969 page.py    wait_for        321 waitFor: 1.0000617504119873 s
+DEBUG 2023-07-19 15:57:21,972 page.py    wait_for        321 waitFor: 1.0003561973571777 s
+DEBUG 2023-07-19 15:57:23,984 page.py    wait_for        321 waitFor: 2.0000507831573486 s
+DEBUG 2023-07-19 15:57:23,986 minitest.py _miniTearDown   589 =========Current case Down: test_02=========
+INFO  2023-07-19 15:57:23,988 minitest.py capture         686 capture teardown.png
+INFO  2023-07-19 15:57:23,989 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-19 15:57:23,990 connection.py _safely_send    417 SEND > {"id":"6ad7d2a9-7f0e-4ba6-ba09-5f79d63d1af5","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-19 15:57:24,121 connection.py _on_message     650 RECV < {"id":"6ad7d2a9-7f0e-4ba6-ba09-5f79d63d1af5","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAZ4AAALgCAIAAAAr3oZ0AAAAAXNSR0IArs4c6QAAIABJREFUeJzsvXuQJUd97/n9ZmZVnXP6dPc8uzUz0lhCgMRjZJDEtXHogsJG60CjG+s72BE85EV4vbuWI2wLJAgUG4HB/wgbJFgcexW7toW4FgbuGvneuxq49yLfBXsAYwvJaIwlEEYjocd0T89MT3efR1Vl5m//yKrTZ2Z6RjPSjPp0kz9GxedUZ2X9MivrV7988//+2xIAAJIiEjly5MjrgBlMG4HqL5EjR4689lkh2DmAROTIkSOvD+af7CuDoavORo4cOfLaZyUCMPxm5MiRI68Prr02opLIkSNHXvusgqGDDP4WOXLkyGue+Sf7qsEfUaJEibJuREEqJ45g5MiRI68Prrw2onLlIkeOHHkdsAJAULBs8yJHjhx5rT...
+INFO  2023-07-19 15:57:24,124 basenative.py wrapper         28  call IdeNative.screen_shot end
+INFO  2023-07-19 15:57:24,126 basenative.py wrapper         24  call BaseNative.get_start_up
+INFO  2023-07-19 15:57:24,127 basenative.py wrapper         28  call BaseNative.get_start_up end
+ERROR 2023-07-19 15:57:24,138 assertbase.py _get_stack_info 341 <bound method FirstTest.test_02 of <first_test.FirstTest testMethod=test_02>>
+Traceback (most recent call last):
+  File "E:\workspace\miniumcase\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 265, in testPartExecutor
+    yield
+  File "E:\workspace\miniumcase\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 350, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "E:\workspace\miniumcase\test\first_test.py", line 48, in test_02
+    base.shadow_input_text(0,'2023071815475')
+  File "E:\workspace\miniumcase\base\basepage.py", line 91, in shadow_input_text
+    self.page.get_elements("van-field")[i].get_element("van-cell").get_element("view").get_element("input").input(test)
+  File "E:\workspace\miniumcase\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 299, in __getattr__
+    raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{name}'")
+AttributeError: 'BasePage' object has no attribute 'page'

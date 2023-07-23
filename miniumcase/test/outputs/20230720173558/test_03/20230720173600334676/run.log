@@ -1,0 +1,16 @@
+INFO  2023-07-20 17:36:00,347 minitest.py _miniSetUp      340 =========Current case: test_03=========
+INFO  2023-07-20 17:36:00,349 minitest.py _miniSetUp      343 package info: E:.workspace.miniumcase.test.first_test, case info: FirstTest.test_03
+INFO  2023-07-20 17:36:00,350 basenative.py wrapper         24  call BaseNative.check_connection
+INFO  2023-07-20 17:36:00,352 basenative.py wrapper         28  call BaseNative.check_connection end
+INFO  2023-07-20 17:36:00,354 basenative.py wrapper         24  call BaseNative.back_to_miniprogram
+INFO  2023-07-20 17:36:00,356 basenative.py back_to_miniprogram 549 try back_to_miniprogram 3
+INFO  2023-07-20 17:36:00,357 basenative.py wrapper         28  call BaseNative.back_to_miniprogram end
+INFO  2023-07-20 17:36:00,359 app.py     relaunch        623 ReLaunch: /pages/account/mode
+DEBUG 2023-07-20 17:36:00,362 connection.py _safely_send    417 ASYNC_SEND > {"id":"ea50cf0d-8d5f-4a1e-8006-4c74e88a6e3b","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/account/mode"}]}}
+DEBUG 2023-07-20 17:36:00,411 connection.py _on_message     652 RECV < {"id":"ea50cf0d-8d5f-4a1e-8006-4c74e88a6e3b","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2023-07-20 17:36:00,413 connection.py _handle_async_msg 693 received async msg: ea50cf0d-8d5f-4a1e-8006-4c74e88a6e3b
+DEBUG 2023-07-20 17:36:01,197 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":377,"path":"pages/account/mode","query":{},"openType":"reLaunch","__ts__":1689845761164},1689845761165]}}
+INFO  2023-07-20 17:36:01,200 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 377, 'path': 'pages/account/mode', 'query': {}, 'openType': 'reLaunch', '__ts__': 1689845761164}, 1689845761165]}
+INFO  2023-07-20 17:36:01,201 minitest.py capture         686 capture setup.png
+INFO  2023-07-20 17:36:01,202 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-20 17:36:01,207 connection.py _safely_send    417 SEND > {"id":"84f5997e-4e66-46e3-8e52-8006fa466e0c","method":"App.captureScreenshot","params":{}}

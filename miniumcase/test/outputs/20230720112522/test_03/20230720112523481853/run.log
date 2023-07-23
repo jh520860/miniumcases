@@ -1,0 +1,67 @@
+INFO  2023-07-20 11:25:23,483 minitest.py _miniSetUp      340 =========Current case: test_03=========
+INFO  2023-07-20 11:25:23,484 minitest.py _miniSetUp      343 package info: E:.workspace.miniumcase.test.first_test, case info: FirstTest.test_03
+INFO  2023-07-20 11:25:23,485 basenative.py wrapper         24  call BaseNative.check_connection
+INFO  2023-07-20 11:25:23,486 basenative.py wrapper         28  call BaseNative.check_connection end
+INFO  2023-07-20 11:25:23,487 basenative.py wrapper         24  call BaseNative.back_to_miniprogram
+INFO  2023-07-20 11:25:23,488 basenative.py back_to_miniprogram 549 try back_to_miniprogram 3
+INFO  2023-07-20 11:25:23,489 basenative.py wrapper         28  call BaseNative.back_to_miniprogram end
+INFO  2023-07-20 11:25:23,549 app.py     relaunch        623 ReLaunch: /pages/account/mode
+DEBUG 2023-07-20 11:25:23,550 connection.py _safely_send    417 ASYNC_SEND > {"id":"db9f7843-6604-48ad-9e91-6d4337f8bea7","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/account/mode"}]}}
+DEBUG 2023-07-20 11:25:23,600 connection.py _on_message     652 RECV < {"id":"db9f7843-6604-48ad-9e91-6d4337f8bea7","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2023-07-20 11:25:23,601 connection.py _handle_async_msg 693 received async msg: db9f7843-6604-48ad-9e91-6d4337f8bea7
+DEBUG 2023-07-20 11:25:23,937 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":75,"path":"pages/account/mode","query":{},"openType":"reLaunch","__ts__":1689823523919},1689823523920]}}
+INFO  2023-07-20 11:25:23,939 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 75, 'path': 'pages/account/mode', 'query': {}, 'openType': 'reLaunch', '__ts__': 1689823523919}, 1689823523920]}
+INFO  2023-07-20 11:25:23,949 minitest.py capture         686 capture setup.png
+INFO  2023-07-20 11:25:23,951 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-20 11:25:23,952 connection.py _safely_send    417 SEND > {"id":"c3879ec1-9f1a-40fa-9a80-e579010c04d6","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-20 11:25:24,113 connection.py _on_message     650 RECV < {"id":"c3879ec1-9f1a-40fa-9a80-e579010c04d6","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAZ4AAALgCAIAAAAr3oZ0AAAAAXNSR0IArs4c6QAAIABJREFUeJzsvXuQJUd97/n9ZmZVnXP6dPc8uzUz0lhCgMRjZJDEtXHogsJG60CjG+s72BE85EV4vbuWI2wLJAgUG4HB/wgbJFgcexW7toW4FgbuGvneuxq49yLfBXsAYwvJaIwlEEYjocd0T89MT3efR1Vl5m//yKrTZ2Z6RjPSjPp0kz9GxedUZ2X9MivrV7988//+2xIAAJIiEjly5MjrgBlMG4HqL5EjR4689lkh2DmAROTIkSOvD+af7CuDoavORo4cOfLaZyUCMPxm5MiRI68Prr02opLIkSNHXvusgqGDDP4WOXLkyGue+Sf7qsEfUaJEibJuREEqJ45g5MiRI68Prrw2onLlIkeOHHkdsAJAULBs8yJHjhx5rT...
+INFO  2023-07-20 11:25:24,116 basenative.py wrapper         28  call IdeNative.screen_shot end
+INFO  2023-07-20 11:25:24,119 minitest.py _miniSetUp      393 =========case: test_03 start=========
+INFO  2023-07-20 11:25:24,122 page.py    _get_elements_by_css 557 try to get elements: [class='btn_text']
+DEBUG 2023-07-20 11:25:24,123 connection.py _safely_send    417 SEND > {"id":"0e12cdcc-385e-4c7f-b795-2ef35fa68f11","method":"Page.getElements","params":{"selector":"[class='btn_text']","pageId":75}}
+DEBUG 2023-07-20 11:25:24,225 connection.py _on_message     652 RECV < {"id":"0e12cdcc-385e-4c7f-b795-2ef35fa68f11","result":{"elements":[{"elementId":"4689699f-e1ee-4c77-b4f0-f744569f0b34","tagName":"text"},{"elementId":"432128da-56ae-43f7-9329-4651a6eebe30","tagName":"text"},{"elementId":"b5b8be9f-0ac0-44e4-ad90-c189a7c9543c","tagName":"text"}]}}
+INFO  2023-07-20 11:25:24,226 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001C8B47BD0C0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001C8B47BD120>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001C8B47BCB20>]
+DEBUG 2023-07-20 11:25:24,227 connection.py _safely_send    417 SEND > {"id":"aa5dd996-42ee-4d14-8b15-76a9941911b0","method":"Element.tap","params":{"elementId":"b5b8be9f-0ac0-44e4-ad90-c189a7c9543c","pageId":75}}
+DEBUG 2023-07-20 11:25:24,311 connection.py _on_message     652 RECV < {"id":"aa5dd996-42ee-4d14-8b15-76a9941911b0","result":{}}
+DEBUG 2023-07-20 11:25:24,672 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":76,"path":"pages/assess/theoryExam","query":{},"openType":"navigateTo","__ts__":1689823524663},1689823524665]}}
+INFO  2023-07-20 11:25:24,673 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 76, 'path': 'pages/assess/theoryExam', 'query': {}, 'openType': 'navigateTo', '__ts__': 1689823524663}, 1689823524665]}
+DEBUG 2023-07-20 11:25:25,313 page.py    wait_for        321 waitFor: 1.0007717609405518 s
+INFO  2023-07-20 11:25:25,314 page.py    _get_elements_by_css 557 try to get elements: view
+DEBUG 2023-07-20 11:25:25,315 connection.py _safely_send    417 SEND > {"id":"70d44868-323c-4ef2-8c0d-1199dfff4158","method":"Page.getElements","params":{"selector":"view","pageId":76}}
+DEBUG 2023-07-20 11:25:25,321 connection.py _on_message     652 RECV < {"id":"70d44868-323c-4ef2-8c0d-1199dfff4158","result":{"elements":[{"elementId":"5b1969d4-35c2-4e59-bec4-d9192dedf90e","tagName":"view"}]}}
+INFO  2023-07-20 11:25:25,322 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001C8B47BCD00>]
+DEBUG 2023-07-20 11:25:25,323 connection.py _safely_send    417 SEND > {"id":"85a8c495-1f5b-4b81-949e-5fa1ec774499","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"5b1969d4-35c2-4e59-bec4-d9192dedf90e","pageId":76}}
+DEBUG 2023-07-20 11:25:25,328 connection.py _on_message     652 RECV < {"id":"85a8c495-1f5b-4b81-949e-5fa1ec774499","result":{"properties":["考试记录"]}}
+INFO  2023-07-20 11:25:25,330 page.py    _get_elements_by_css 557 try to get elements: image[mode='aspectFit']
+DEBUG 2023-07-20 11:25:25,331 connection.py _safely_send    417 SEND > {"id":"3e6e95f6-c64a-4784-a20a-56bf50eceb99","method":"Page.getElements","params":{"selector":"image[mode='aspectFit']","pageId":76}}
+DEBUG 2023-07-20 11:25:25,336 connection.py _on_message     652 RECV < {"id":"3e6e95f6-c64a-4784-a20a-56bf50eceb99","result":{"elements":[]}}
+WARNI 2023-07-20 11:25:25,337 page.py    _get_elements_by_css 562 Could not found any element 'image[mode='aspectFit']' you need
+DEBUG 2023-07-20 11:25:25,339 minitest.py _miniTearDown   589 =========Current case Down: test_03=========
+INFO  2023-07-20 11:25:25,340 minitest.py capture         686 capture teardown.png
+INFO  2023-07-20 11:25:25,341 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-20 11:25:25,342 connection.py _safely_send    417 SEND > {"id":"e60ea4fe-c655-41d7-ae12-045929383cbb","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-20 11:25:25,418 connection.py _on_message     650 RECV < {"id":"e60ea4fe-c655-41d7-ae12-045929383cbb","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAZ4AAAKgCAIAAAAkhowYAAAAAXNSR0IArs4c6QAAGyBJREFUeJzt3V/MbXV95/HPd3lgqnRCybRWba1WU5qOranRjJ1UmkxmmkmTQa9KMpPh2hvileHOGIa7E68MN07tJJV2WmnH1tJpp63ttPxRj6gICspB4CAoAuIREXB8Ouc3F2ut/Tz88xzgTHjW19f74pfX3vtwwJ248t2/vdZe9V+v30uSpKrGGMzMDTytj3PgNWbmbXvKcpxLVZiZe7h+54a9jKRitVqtbdbpwONiZu7h+p0blq8RJKlNU5JKZaQSZuYerg/fsLc/ylmtVmuLddp/XMXM3MP1YXttktq1nNeWZHc+CDPz1l2/e+PeWIe5qjDzdv3Fb9Txh+v+79Qjj9cTexkjG6oqrzgn/+K88bM/MS585fjlV40X85...
+INFO  2023-07-20 11:25:25,420 basenative.py wrapper         28  call IdeNative.screen_shot end
+DEBUG 2023-07-20 11:25:25,421 connection.py _safely_send    417 SEND > {"id":"92dd2fe2-5a3c-41a6-b462-ae762840647a","method":"Page.getElementByXpath","params":{"selector":"/*","pageId":76}}
+DEBUG 2023-07-20 11:25:25,427 connection.py _on_message     652 RECV < {"id":"92dd2fe2-5a3c-41a6-b462-ae762840647a","result":{"elementId":"5b1969d4-35c2-4e59-bec4-d9192dedf90e","tagName":"view"}}
+DEBUG 2023-07-20 11:25:25,429 connection.py _safely_send    417 SEND > {"id":"e1e1f683-135d-40cc-9bb9-0919dce13145","method":"Element.getWXML","params":{"type":"outer","elementId":"5b1969d4-35c2-4e59-bec4-d9192dedf90e","pageId":76}}
+DEBUG 2023-07-20 11:25:25,433 connection.py _on_message     652 RECV < {"id":"e1e1f683-135d-40cc-9bb9-0919dce13145","result":{"wxml":"<view class=\"recordBtn\" style=\"align-self: flex-end; width: 66px; margin: 11px;\">考试记录</view>"}}
+INFO  2023-07-20 11:25:25,435 basenative.py wrapper         24  call BaseNative.get_start_up
+INFO  2023-07-20 11:25:25,436 basenative.py wrapper         28  call BaseNative.get_start_up end
+ERROR 2023-07-20 11:25:25,498 assertbase.py _get_stack_info 341 <bound method FirstTest.test_03 of <first_test.FirstTest testMethod=test_03>>
+Traceback (most recent call last):
+  File "E:\workspace\miniumcase\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 265, in testPartExecutor
+    yield
+  File "E:\workspace\miniumcase\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 350, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "E:\workspace\miniumcase\test\first_test.py", line 72, in test_03
+    self.page.get_element("image[mode='aspectFit']").tap() #进入考试页面
+  File "E:\workspace\miniumcase\venv\lib\site-packages\minium\miniprogram\base_driver\app.py", line 214, in wrapper
+    return func(*args, **kwargs)
+  File "E:\workspace\miniumcase\venv\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 172, in wrapper
+    result = func(*args, **kwargs)
+  File "E:\workspace\miniumcase\venv\lib\site-packages\minium\miniprogram\base_driver\page.py", line 286, in get_element
+    raise MiniElementNotFoundError("element[%s] not found" % selector)
+minium.framework.exception.MiniElementNotFoundError: element[image[mode='aspectFit']] not found

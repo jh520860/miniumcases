@@ -1,0 +1,54 @@
+INFO  2023-07-23 13:26:12,882 minitest.py _miniSetUp      340 =========Current case: test_01=========
+INFO  2023-07-23 13:26:12,883 minitest.py _miniSetUp      343 package info: E:.miniumcase.miniumcase.test.first_test, case info: FirstTest.test_01
+INFO  2023-07-23 13:26:12,883 basenative.py wrapper         24  call BaseNative.check_connection
+INFO  2023-07-23 13:26:12,883 basenative.py wrapper         28  call BaseNative.check_connection end
+INFO  2023-07-23 13:26:12,884 basenative.py wrapper         24  call BaseNative.back_to_miniprogram
+INFO  2023-07-23 13:26:12,884 basenative.py back_to_miniprogram 549 try back_to_miniprogram 3
+INFO  2023-07-23 13:26:12,884 basenative.py wrapper         28  call BaseNative.back_to_miniprogram end
+INFO  2023-07-23 13:26:12,885 app.py     relaunch        623 ReLaunch: /pages/account/mode
+DEBUG 2023-07-23 13:26:12,885 connection.py _safely_send    417 ASYNC_SEND > {"id":"926870e4-b1d4-4050-b8ee-9f2ef39333be","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/account/mode"}]}}
+DEBUG 2023-07-23 13:26:12,898 connection.py _on_message     652 RECV < {"id":"926870e4-b1d4-4050-b8ee-9f2ef39333be","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2023-07-23 13:26:12,899 connection.py _handle_async_msg 693 received async msg: 926870e4-b1d4-4050-b8ee-9f2ef39333be
+DEBUG 2023-07-23 13:26:13,203 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":66,"path":"pages/account/mode","query":{},"openType":"reLaunch"},1690089973177]}}
+INFO  2023-07-23 13:26:13,204 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 66, 'path': 'pages/account/mode', 'query': {}, 'openType': 'reLaunch'}, 1690089973177]}
+INFO  2023-07-23 13:26:13,205 minitest.py capture         686 capture setup.png
+INFO  2023-07-23 13:26:13,205 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-23 13:26:13,206 connection.py _safely_send    417 SEND > {"id":"214e7f56-9d4a-417d-9e51-ad042d982dd9","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-23 13:26:13,238 connection.py _on_message     652 RECV < {"id":"214e7f56-9d4a-417d-9e51-ad042d982dd9","error":{"message":"fail to capture screenshot"}}
+ERROR 2023-07-23 13:26:13,238 connection.py _on_message     660 [214e7f56-9d4a-417d-9e51-ad042d982dd9]: fail to capture screenshot
+ERROR 2023-07-23 13:26:13,239 app.py     screen_shot     393 fail to capture screenshot
+INFO  2023-07-23 13:26:13,239 basenative.py wrapper         28  call IdeNative.screen_shot end
+WARNI 2023-07-23 13:26:13,240 minitest.py capture         697 E:\miniumcase\miniumcase\test\outputs\20230723132611\test_01\20230723132612869207\images\setup.png not exists
+INFO  2023-07-23 13:26:13,240 minitest.py _miniSetUp      393 =========case: test_01 start=========
+DEBUG 2023-07-23 13:26:15,249 page.py    wait_for        321 waitFor: 2.007331371307373 s
+INFO  2023-07-23 13:26:15,249 app.py     redirect_to     603 RedirectTo: /pages/assess/sign
+DEBUG 2023-07-23 13:26:15,250 connection.py _safely_send    417 ASYNC_SEND > {"id":"267006bf-4e39-4c24-b318-23edb0354504","method":"App.callWxMethod","params":{"method":"redirectTo","args":[{"url":"/pages/assess/sign"}]}}
+DEBUG 2023-07-23 13:26:15,270 connection.py _on_message     652 RECV < {"id":"267006bf-4e39-4c24-b318-23edb0354504","result":{"result":{"errMsg":"redirectTo:ok"}}}
+INFO  2023-07-23 13:26:15,271 connection.py _handle_async_msg 693 received async msg: 267006bf-4e39-4c24-b318-23edb0354504
+DEBUG 2023-07-23 13:26:15,479 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":67,"path":"pages/assess/sign","query":{},"openType":"redirectTo"},1690089975448]}}
+INFO  2023-07-23 13:26:15,480 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 67, 'path': 'pages/assess/sign', 'query': {}, 'openType': 'redirectTo'}, 1690089975448]}
+DEBUG 2023-07-23 13:26:17,485 page.py    wait_for        321 waitFor: 2.004678249359131 s
+DEBUG 2023-07-23 13:26:17,485 minitest.py _miniTearDown   589 =========Current case Down: test_01=========
+INFO  2023-07-23 13:26:17,486 minitest.py capture         686 capture teardown.png
+INFO  2023-07-23 13:26:17,486 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-23 13:26:17,486 connection.py _safely_send    417 SEND > {"id":"3dfec01c-b02d-4cdf-99ae-577c6b7a5b41","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-23 13:26:17,520 connection.py _on_message     652 RECV < {"id":"3dfec01c-b02d-4cdf-99ae-577c6b7a5b41","error":{"message":"fail to capture screenshot"}}
+ERROR 2023-07-23 13:26:17,520 connection.py _on_message     660 [3dfec01c-b02d-4cdf-99ae-577c6b7a5b41]: fail to capture screenshot
+ERROR 2023-07-23 13:26:17,521 app.py     screen_shot     393 fail to capture screenshot
+INFO  2023-07-23 13:26:17,521 basenative.py wrapper         28  call IdeNative.screen_shot end
+WARNI 2023-07-23 13:26:17,521 minitest.py capture         697 E:\miniumcase\miniumcase\test\outputs\20230723132611\test_01\20230723132612869207\images\teardown.png not exists
+INFO  2023-07-23 13:26:17,521 basenative.py wrapper         24  call BaseNative.get_start_up
+INFO  2023-07-23 13:26:17,521 basenative.py wrapper         28  call BaseNative.get_start_up end
+ERROR 2023-07-23 13:26:17,526 assertbase.py _get_stack_info 341 <bound method FirstTest.test_01 of <first_test.FirstTest testMethod=test_01>>
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\minium\framework\libs\unittest\case.py", line 265, in testPartExecutor
+    yield
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\minium\framework\libs\unittest\case.py", line 350, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "E:\miniumcase\miniumcase\test\first_test.py", line 28, in test_01
+    self.Element.tap(10,50,10,200)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\minium\framework\libs\unittest\case.py", line 299, in __getattr__
+    raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{name}'")
+AttributeError: 'FirstTest' object has no attribute 'Element'

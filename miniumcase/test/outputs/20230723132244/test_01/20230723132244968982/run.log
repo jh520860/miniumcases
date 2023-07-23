@@ -1,0 +1,38 @@
+INFO  2023-07-23 13:22:44,969 minitest.py _miniSetUp      340 =========Current case: test_01=========
+INFO  2023-07-23 13:22:44,970 minitest.py _miniSetUp      343 package info: E:.miniumcase.miniumcase.test.first_test, case info: FirstTest.test_01
+INFO  2023-07-23 13:22:44,970 basenative.py wrapper         24  call BaseNative.check_connection
+INFO  2023-07-23 13:22:44,970 basenative.py wrapper         28  call BaseNative.check_connection end
+INFO  2023-07-23 13:22:44,970 basenative.py wrapper         24  call BaseNative.back_to_miniprogram
+INFO  2023-07-23 13:22:44,971 basenative.py back_to_miniprogram 549 try back_to_miniprogram 3
+INFO  2023-07-23 13:22:44,971 basenative.py wrapper         28  call BaseNative.back_to_miniprogram end
+INFO  2023-07-23 13:22:44,972 app.py     relaunch        623 ReLaunch: /pages/account/mode
+DEBUG 2023-07-23 13:22:44,972 connection.py _safely_send    417 ASYNC_SEND > {"id":"e95742b1-d601-4535-a009-efc51522a9b8","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/account/mode"}]}}
+DEBUG 2023-07-23 13:22:44,986 connection.py _on_message     652 RECV < {"id":"e95742b1-d601-4535-a009-efc51522a9b8","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2023-07-23 13:22:44,987 connection.py _handle_async_msg 693 received async msg: e95742b1-d601-4535-a009-efc51522a9b8
+DEBUG 2023-07-23 13:22:45,339 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":63,"path":"pages/account/mode","query":{},"openType":"reLaunch"},1690089765312]}}
+INFO  2023-07-23 13:22:45,340 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 63, 'path': 'pages/account/mode', 'query': {}, 'openType': 'reLaunch'}, 1690089765312]}
+INFO  2023-07-23 13:22:45,341 minitest.py capture         686 capture setup.png
+INFO  2023-07-23 13:22:45,342 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-23 13:22:45,343 connection.py _safely_send    417 SEND > {"id":"ac9555af-740d-4d25-94f3-b5b121398045","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-23 13:22:45,380 connection.py _on_message     652 RECV < {"id":"ac9555af-740d-4d25-94f3-b5b121398045","error":{"message":"fail to capture screenshot"}}
+ERROR 2023-07-23 13:22:45,380 connection.py _on_message     660 [ac9555af-740d-4d25-94f3-b5b121398045]: fail to capture screenshot
+ERROR 2023-07-23 13:22:45,381 app.py     screen_shot     393 fail to capture screenshot
+INFO  2023-07-23 13:22:45,381 basenative.py wrapper         28  call IdeNative.screen_shot end
+WARNI 2023-07-23 13:22:45,382 minitest.py capture         697 E:\miniumcase\miniumcase\test\outputs\20230723132244\test_01\20230723132244968982\images\setup.png not exists
+INFO  2023-07-23 13:22:45,382 minitest.py _miniSetUp      393 =========case: test_01 start=========
+DEBUG 2023-07-23 13:22:47,392 page.py    wait_for        321 waitFor: 2.008697986602783 s
+INFO  2023-07-23 13:22:47,392 app.py     redirect_to     603 RedirectTo: /pages/assess/sign
+DEBUG 2023-07-23 13:22:47,393 connection.py _safely_send    417 ASYNC_SEND > {"id":"07d6467f-c95a-4dbc-ac52-e63a8e0f1aa7","method":"App.callWxMethod","params":{"method":"redirectTo","args":[{"url":"/pages/assess/sign"}]}}
+DEBUG 2023-07-23 13:22:47,413 connection.py _on_message     652 RECV < {"id":"07d6467f-c95a-4dbc-ac52-e63a8e0f1aa7","result":{"result":{"errMsg":"redirectTo:ok"}}}
+INFO  2023-07-23 13:22:47,414 connection.py _handle_async_msg 693 received async msg: 07d6467f-c95a-4dbc-ac52-e63a8e0f1aa7
+DEBUG 2023-07-23 13:22:47,610 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":64,"path":"pages/assess/sign","query":{},"openType":"redirectTo"},1690089767581]}}
+INFO  2023-07-23 13:22:47,611 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 64, 'path': 'pages/assess/sign', 'query': {}, 'openType': 'redirectTo'}, 1690089767581]}
+DEBUG 2023-07-23 13:22:49,614 page.py    wait_for        321 waitFor: 2.0023200511932373 s
+INFO  2023-07-23 13:22:49,615 page.py    _get_elements_by_css 557 try to get elements: view
+DEBUG 2023-07-23 13:22:49,615 connection.py _safely_send    417 SEND > {"id":"8ed68786-6c38-4d3f-bc4b-2335b3579d01","method":"Page.getElements","params":{"selector":"view","pageId":64}}
+DEBUG 2023-07-23 13:22:49,619 connection.py _on_message     652 RECV < {"id":"8ed68786-6c38-4d3f-bc4b-2335b3579d01","result":{"elements":[{"elementId":"46e7b085-1256-4be5-812e-020cc1b5904b","tagName":"view"},{"elementId":"32aa4e55-4da3-44ad-ad07-c55f935516bb","tagName":"view"},{"elementId":"c1160fca-7374-44d8-a41f-aa4f198bba85","tagName":"view"}]}}
+INFO  2023-07-23 13:22:49,619 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000105B1010370>, <minium.miniprogram.base_driver.element.BaseElement object at 0x00000105B1010640>, <minium.miniprogram.base_driver.element.BaseElement object at 0x00000105B0FF8760>]
+DEBUG 2023-07-23 13:22:49,620 connection.py _safely_send    417 SEND > {"id":"cb6a74ea-92c4-4c5b-989c-ad08924de49e","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"46e7b085-1256-4be5-812e-020cc1b5904b","pageId":64}}
+DEBUG 2023-07-23 13:22:49,622 connection.py _on_message     652 RECV < {"id":"cb6a74ea-92c4-4c5b-989c-ad08924de49e","result":{"properties":["提交\n清除"]}}
+DEBUG 2023-07-23 13:22:49,622 connection.py _safely_send    417 SEND > {"id":"554d9947-1490-4916-88c2-911841ce3d8d","method":"Element.tap","params":{"elementId":"46e7b085-1256-4be5-812e-020cc1b5904b","pageId":64}}
+DEBUG 2023-07-23 13:22:49,625 connection.py _on_message     652 RECV < {"id":"554d9947-1490-4916-88c2-911841ce3d8d","result":{}}

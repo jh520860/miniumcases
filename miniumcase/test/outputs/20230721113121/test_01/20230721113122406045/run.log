@@ -1,0 +1,89 @@
+INFO  2023-07-21 11:31:22,411 minitest.py _miniSetUp      340 =========Current case: test_01=========
+INFO  2023-07-21 11:31:22,412 minitest.py _miniSetUp      343 package info: E:.workspace.miniumcase.test.first_test, case info: FirstTest.test_01
+INFO  2023-07-21 11:31:22,416 basenative.py wrapper         24  call BaseNative.check_connection
+INFO  2023-07-21 11:31:22,419 basenative.py wrapper         28  call BaseNative.check_connection end
+INFO  2023-07-21 11:31:22,420 basenative.py wrapper         24  call BaseNative.back_to_miniprogram
+INFO  2023-07-21 11:31:22,422 basenative.py back_to_miniprogram 549 try back_to_miniprogram 3
+INFO  2023-07-21 11:31:22,423 basenative.py wrapper         28  call BaseNative.back_to_miniprogram end
+INFO  2023-07-21 11:31:22,586 app.py     relaunch        623 ReLaunch: /pages/account/mode
+DEBUG 2023-07-21 11:31:22,588 connection.py _safely_send    417 ASYNC_SEND > {"id":"77a08b13-941c-494d-83c0-d849f3704dea","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/account/mode"}]}}
+DEBUG 2023-07-21 11:31:22,625 connection.py _on_message     652 RECV < {"id":"77a08b13-941c-494d-83c0-d849f3704dea","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2023-07-21 11:31:22,627 connection.py _handle_async_msg 693 received async msg: 77a08b13-941c-494d-83c0-d849f3704dea
+DEBUG 2023-07-21 11:31:23,283 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":206,"path":"pages/account/mode","query":{},"openType":"reLaunch","__ts__":1689910283258},1689910283262]}}
+INFO  2023-07-21 11:31:23,286 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 206, 'path': 'pages/account/mode', 'query': {}, 'openType': 'reLaunch', '__ts__': 1689910283258}, 1689910283262]}
+INFO  2023-07-21 11:31:23,288 minitest.py capture         686 capture setup.png
+INFO  2023-07-21 11:31:23,289 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-21 11:31:23,290 connection.py _safely_send    417 SEND > {"id":"a79f7893-06f8-41ff-a205-9b534fc91154","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-21 11:31:23,463 connection.py _on_message     650 RECV < {"id":"a79f7893-06f8-41ff-a205-9b534fc91154","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAZ4AAALgCAIAAAAr3oZ0AAAAAXNSR0IArs4c6QAAIABJREFUeJzsvXuQJUd97/n9ZmZVnXP6dPc8uzUz0lhCgMRjZJDEtXHogsJG60CjG+s72BE85EV4vbuWI2wLJAgUG4HB/wgbJFgcexW7toW4FgbuGvneuxq49yLfBXsAYwvJaIwlEEYjocd0T89MT3efR1Vl5m//yKrTZ2Z6RjPSjPp0kz9GxedUZ2X9MivrV7988//+2xIAAJIiEjly5MjrgBlMG4HqL5EjR4689lkh2DmAROTIkSOvD+af7CuDoavORo4cOfLaZyUCMPxm5MiRI68Prr02opLIkSNHXvusgqGDDP4WOXLkyGue+Sf7qsEfUaJEibJuREEqJ45g5MiRI68Prrw2onLlIkeOHHkdsAJAULBs8yJHjhx5rT...
+INFO  2023-07-21 11:31:23,490 basenative.py wrapper         28  call IdeNative.screen_shot end
+INFO  2023-07-21 11:31:23,492 minitest.py _miniSetUp      393 =========case: test_01 start=========
+DEBUG 2023-07-21 11:31:25,494 page.py    wait_for        321 waitFor: 2.0003652572631836 s
+INFO  2023-07-21 11:31:25,496 page.py    _get_elements_by_css 557 try to get elements: [class='btn_text']
+DEBUG 2023-07-21 11:31:25,499 connection.py _safely_send    417 SEND > {"id":"76231971-d91c-42b9-a644-213767e8bb6f","method":"Page.getElements","params":{"selector":"[class='btn_text']","pageId":206}}
+DEBUG 2023-07-21 11:31:25,507 connection.py _on_message     652 RECV < {"id":"76231971-d91c-42b9-a644-213767e8bb6f","result":{"elements":[{"elementId":"2c062de8-0a60-4441-af3e-864da653c0a5","tagName":"text"},{"elementId":"f2902f7a-31c9-4b9c-8c36-e2878fc90822","tagName":"text"},{"elementId":"1a0d8e96-ae39-4e77-9808-58e2023fe9ef","tagName":"text"}]}}
+INFO  2023-07-21 11:31:25,509 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956CA00>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956D210>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956CEB0>]
+DEBUG 2023-07-21 11:31:25,512 connection.py _safely_send    417 SEND > {"id":"38d1dd1e-1c3c-4fa0-9fbd-08398f4a2219","method":"Element.tap","params":{"elementId":"2c062de8-0a60-4441-af3e-864da653c0a5","pageId":206}}
+DEBUG 2023-07-21 11:31:25,564 connection.py _on_message     652 RECV < {"id":"38d1dd1e-1c3c-4fa0-9fbd-08398f4a2219","result":{}}
+DEBUG 2023-07-21 11:31:26,243 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":207,"path":"pages/assess/assessBaseInfo","query":{"mode":"1"},"openType":"navigateTo","__ts__":1689910286205},1689910286206]}}
+INFO  2023-07-21 11:31:26,246 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 207, 'path': 'pages/assess/assessBaseInfo', 'query': {'mode': '1'}, 'openType': 'navigateTo', '__ts__': 1689910286205}, 1689910286206]}
+DEBUG 2023-07-21 11:31:27,567 page.py    wait_for        321 waitFor: 2.0006701946258545 s
+DEBUG 2023-07-21 11:31:28,569 page.py    wait_for        321 waitFor: 1.0008885860443115 s
+INFO  2023-07-21 11:31:28,570 page.py    _get_elements_by_css 557 try to get elements: van-radio-group
+DEBUG 2023-07-21 11:31:28,572 connection.py _safely_send    417 SEND > {"id":"8afd89c5-eda3-4f2b-b974-5825abf069a9","method":"Page.getElements","params":{"selector":"van-radio-group","pageId":207}}
+DEBUG 2023-07-21 11:31:28,579 connection.py _on_message     652 RECV < {"id":"8afd89c5-eda3-4f2b-b974-5825abf069a9","result":{"elements":[{"elementId":"67021d49-aa64-4bf6-b365-d1c3625bd96e","tagName":"van-radio-group","nodeId":"2cebc171"}]}}
+INFO  2023-07-21 11:31:28,580 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x0000020F1956D180>]
+INFO  2023-07-21 11:31:28,582 element.py _get_elements_by_css 474 try to get elements: van-radio
+DEBUG 2023-07-21 11:31:28,583 connection.py _safely_send    417 SEND > {"id":"6d95a4b5-5aa6-4a03-8686-25175e4480a3","method":"Element.getElements","params":{"selector":"van-radio","elementId":"67021d49-aa64-4bf6-b365-d1c3625bd96e","pageId":207,"nodeId":"2cebc171"}}
+DEBUG 2023-07-21 11:31:28,588 connection.py _on_message     650 RECV < {"id":"6d95a4b5-5aa6-4a03-8686-25175e4480a3","result":{"elements":[{"elementId":"81b6d009-0128-456c-b780-1a3bc6f5b565","tagName":"van-radio","nodeId":"f8f4ff1e"},{"elementId":"14a7649b-8807-44c9-b6bb-de882b37e908","tagName":"van-radio","nodeId":"cc136575"},{"elementId":"e294ba7f-91f8-4f3c-a268-b665087b56f8","tagName":"van-radio","nodeId":"0589818a"},{"elementId":"95b0bd60-cb93-459a-bdc4-b13fc40162dc","tagName":"van-radio","nodeId":"7c82836f"},{"elementId":"92fcf40e-7e2d-428a-a97d-b1e24bf1443e","tagName":...
+INFO  2023-07-21 11:31:28,590 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x0000020F1956CD00>, <minium.miniprogram.base_driver.element.CustomElement object at 0x0000020F1956D2A0>, <minium.miniprogram.base_driver.element.CustomElement object at 0x0000020F1956C400>, <minium.miniprogram.base_driver.element.CustomElement object at 0x0000020F1956CF10>, <minium.miniprogram.base_driver.element.CustomElement object at 0x0000020F1956D240>]
+INFO  2023-07-21 11:31:28,592 element.py _get_elements_by_css 474 try to get elements: view
+DEBUG 2023-07-21 11:31:28,593 connection.py _safely_send    417 SEND > {"id":"a2cfe3dc-d6e4-4deb-9f3c-fd3eef8673b8","method":"Element.getElements","params":{"selector":"view","elementId":"14a7649b-8807-44c9-b6bb-de882b37e908","pageId":207,"nodeId":"cc136575"}}
+DEBUG 2023-07-21 11:31:28,598 connection.py _on_message     652 RECV < {"id":"a2cfe3dc-d6e4-4deb-9f3c-fd3eef8673b8","result":{"elements":[{"elementId":"6cfbd89d-c90b-47fa-a859-846528d9207c","tagName":"view"},{"elementId":"9948f551-bf64-4b02-b77e-e4e7ad0a993f","tagName":"view"},{"elementId":"2ca1f21e-0834-4ba7-87db-2eec83497101","tagName":"view"},{"elementId":"07b74c27-4fff-4f1f-a578-0a97a7102692","tagName":"view"}]}}
+INFO  2023-07-21 11:31:28,599 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956CD90>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956D510>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956D330>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956D390>]
+INFO  2023-07-21 11:31:28,601 element.py _get_elements_by_css 474 try to get elements: van-icon
+DEBUG 2023-07-21 11:31:28,602 connection.py _safely_send    417 SEND > {"id":"97876981-2531-446f-8dc3-0ddb1ec0e1c0","method":"Element.getElements","params":{"selector":"van-icon","elementId":"6cfbd89d-c90b-47fa-a859-846528d9207c","pageId":207}}
+DEBUG 2023-07-21 11:31:28,606 connection.py _on_message     652 RECV < {"id":"97876981-2531-446f-8dc3-0ddb1ec0e1c0","result":{"elements":[{"elementId":"f8ad0ffc-2e87-4ff0-bed0-6e78c8a234b6","tagName":"van-icon","nodeId":"8e5ad433"}]}}
+INFO  2023-07-21 11:31:28,608 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x0000020F1956CC70>]
+INFO  2023-07-21 11:31:28,609 element.py _get_elements_by_css 474 try to get elements: view
+DEBUG 2023-07-21 11:31:28,611 connection.py _safely_send    417 SEND > {"id":"9019330e-294a-4d0f-8a5f-80ef35e17f24","method":"Element.getElements","params":{"selector":"view","elementId":"f8ad0ffc-2e87-4ff0-bed0-6e78c8a234b6","pageId":207,"nodeId":"8e5ad433"}}
+DEBUG 2023-07-21 11:31:28,614 connection.py _on_message     652 RECV < {"id":"9019330e-294a-4d0f-8a5f-80ef35e17f24","result":{"elements":[{"elementId":"2ca1f21e-0834-4ba7-87db-2eec83497101","tagName":"view"}]}}
+INFO  2023-07-21 11:31:28,616 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956C4C0>]
+DEBUG 2023-07-21 11:31:28,617 connection.py _safely_send    417 SEND > {"id":"f7db5e09-91d5-440c-821b-44a0f87b45fd","method":"Element.tap","params":{"elementId":"2ca1f21e-0834-4ba7-87db-2eec83497101","pageId":207}}
+DEBUG 2023-07-21 11:31:28,636 connection.py _on_message     652 RECV < {"id":"f7db5e09-91d5-440c-821b-44a0f87b45fd","result":{}}
+INFO  2023-07-21 11:31:28,638 page.py    _get_elements_by_css 557 try to get elements: van-tabs
+DEBUG 2023-07-21 11:31:28,640 connection.py _safely_send    417 SEND > {"id":"011987a5-856a-4df6-a8ab-9bafe9e4a049","method":"Page.getElements","params":{"selector":"van-tabs","pageId":207}}
+DEBUG 2023-07-21 11:31:28,652 connection.py _on_message     652 RECV < {"id":"011987a5-856a-4df6-a8ab-9bafe9e4a049","result":{"elements":[{"elementId":"1ff11d83-f2cb-4ff4-a40e-969740741cc4","tagName":"van-tabs","nodeId":"c9e3f10a"}]}}
+INFO  2023-07-21 11:31:28,654 page.py    _get_elements_by_css 564 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x0000020F1956D150>]
+INFO  2023-07-21 11:31:28,655 element.py _get_elements_by_css 474 try to get elements: van-sticky
+DEBUG 2023-07-21 11:31:28,657 connection.py _safely_send    417 SEND > {"id":"3800498f-92ee-4d98-b75f-328fe8517018","method":"Element.getElements","params":{"selector":"van-sticky","elementId":"1ff11d83-f2cb-4ff4-a40e-969740741cc4","pageId":207,"nodeId":"c9e3f10a"}}
+DEBUG 2023-07-21 11:31:28,660 connection.py _on_message     652 RECV < {"id":"3800498f-92ee-4d98-b75f-328fe8517018","result":{"elements":[{"elementId":"7908c3b3-79c1-4a1a-b3b9-13a431cf6889","tagName":"van-sticky","nodeId":"6455c1fe"}]}}
+INFO  2023-07-21 11:31:28,662 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x0000020F1956CA00>]
+INFO  2023-07-21 11:31:28,664 element.py _get_elements_by_css 474 try to get elements: scroll-view
+DEBUG 2023-07-21 11:31:28,665 connection.py _safely_send    417 SEND > {"id":"e2b8318e-9ab1-4815-95bd-b821531c89c7","method":"Element.getElements","params":{"selector":"scroll-view","elementId":"7908c3b3-79c1-4a1a-b3b9-13a431cf6889","pageId":207,"nodeId":"6455c1fe"}}
+DEBUG 2023-07-21 11:31:28,669 connection.py _on_message     652 RECV < {"id":"e2b8318e-9ab1-4815-95bd-b821531c89c7","result":{"elements":[{"elementId":"f8633e94-b23e-4870-8a88-f0e79fbd3b8b","tagName":"scroll-view"}]}}
+INFO  2023-07-21 11:31:28,671 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.ViewElement object at 0x0000020F1956D030>]
+INFO  2023-07-21 11:31:28,672 element.py _get_elements_by_css 474 try to get elements: view
+DEBUG 2023-07-21 11:31:28,674 connection.py _safely_send    417 SEND > {"id":"629c9647-6751-4017-b8a1-4dcd0d6a6537","method":"Element.getElements","params":{"selector":"view","elementId":"f8633e94-b23e-4870-8a88-f0e79fbd3b8b","pageId":207}}
+DEBUG 2023-07-21 11:31:28,678 connection.py _on_message     650 RECV < {"id":"629c9647-6751-4017-b8a1-4dcd0d6a6537","result":{"elements":[{"elementId":"b0331fd8-ce81-4819-8eff-be77d510d245","tagName":"view"},{"elementId":"1f1d7fde-d2c8-44cc-880b-1643b778e419","tagName":"view"},{"elementId":"ea464c69-74c7-4558-89f2-712637e68b78","tagName":"view"},{"elementId":"3bf005f3-de60-4589-b5f0-403ce56cf69d","tagName":"view"},{"elementId":"d7f9529a-06fa-454e-9f29-41c79cec447b","tagName":"view"},{"elementId":"a9b7a5e8-b542-40e3-849e-e7b9c68b02f1","tagName":"view"},{"elementId":"d45031d9...
+INFO  2023-07-21 11:31:28,680 element.py _get_elements_by_css 481 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956CE80>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956CF10>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956D420>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956CD00>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956D240>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956D1B0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956D4E0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956D0C0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956CC40>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956CF40>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956D3C0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x0000020F1956C3A0>]
+DEBUG 2023-07-21 11:31:28,682 connection.py _safely_send    417 SEND > {"id":"cec1e26d-5a78-48cb-8a8f-180290de937f","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"7f1135cb-c36d-4804-9254-ccf9e0fde263","pageId":207}}
+DEBUG 2023-07-21 11:31:28,685 connection.py _on_message     652 RECV < {"id":"cec1e26d-5a78-48cb-8a8f-180290de937f","result":{"properties":["健康相关问题"]}}
+DEBUG 2023-07-21 11:31:28,687 minitest.py _miniTearDown   589 =========Current case Down: test_01=========
+INFO  2023-07-21 11:31:28,688 minitest.py capture         686 capture teardown.png
+INFO  2023-07-21 11:31:28,690 basenative.py wrapper         24  call IdeNative.screen_shot
+DEBUG 2023-07-21 11:31:28,691 connection.py _safely_send    417 SEND > {"id":"f30b72cb-a9e6-4fa2-81aa-a3cc1a34986b","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-07-21 11:31:28,871 connection.py _on_message     650 RECV < {"id":"f30b72cb-a9e6-4fa2-81aa-a3cc1a34986b","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAZ4AAAKgCAIAAAAkhowYAAAAAXNSR0IArs4c6QAAIABJREFUeJzt3X9UVPedP/7XDAgYlYgTMWKiQWhaTCWuA832OzHbY434cVHsCTHZXYQVE0i7WVDXNLV8KCUszS9XgZNNCxayIrvbJvgpPyb5iCF+NuqcNIFhERPdpupEElFGL4MmyA+B+f5xh5k7d+78uMPcAd4+H6fnNN65v2a485z3r3vfqhsDwwQAwBb1VJ8AAEDgIdoAgEGINgBgEKINABiEaAMABiHaAIBBiDYAYBCiDQAYhGgDAAYh2gCAQaGeX248o/53Y0jnV6rh0eCcz8wTHkqr7rP+nXYsbeW471vNClWHhYaEqFXKnRgEzdi4dWR07PYoLoBpROXhHtLSlpCqj0KCeTYzWs73xwpSxnxZM2JWSNgsfLCsGb...
+INFO  2023-07-21 11:31:28,911 basenative.py wrapper         28  call IdeNative.screen_shot end
+INFO  2023-07-21 11:31:28,919 basenative.py wrapper         24  call BaseNative.get_start_up
+INFO  2023-07-21 11:31:28,942 basenative.py wrapper         28  call BaseNative.get_start_up end
+ERROR 2023-07-21 11:31:28,958 assertbase.py _get_stack_info 341 <bound method FirstTest.test_01 of <first_test.FirstTest testMethod=test_01>>
+Traceback (most recent call last):
+  File "E:\workspace\miniumcase\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 265, in testPartExecutor
+    yield
+  File "E:\workspace\miniumcase\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 350, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "E:\workspace\miniumcase\test\first_test.py", line 35, in test_01
+    strs = self.page.get_element("van-tabs").get_element("van-sticky").get_element("scroll-view").get_elements("view")[10].inner_text()
+TypeError: 'str' object is not callable

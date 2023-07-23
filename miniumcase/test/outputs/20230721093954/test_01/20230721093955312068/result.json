@@ -1,0 +1,101 @@
+{
+    "case_name": "test_01",
+    "run_time": "20230721 09:39:55",
+    "test_type": "FirstTest",
+    "case_doc": null,
+    "success": true,
+    "failures": "",
+    "errors": "",
+    "start_timestamp": 1689903596.2355397,
+    "is_failure": false,
+    "is_error": false,
+    "module": "E:.workspace.miniumcase.test.first_test",
+    "package": "first_test",
+    "failed_line_num": -1,
+    "device": {
+        "system_info": {
+            "model": "iPhone 6/7/8 Plus",
+            "pixelRatio": 3,
+            "windowWidth": 414,
+            "windowHeight": 736,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 414,
+            "screenHeight": 736,
+            "SDKVersion": "2.33.0",
+            "brand": "devtools",
+            "fontSizeSetting": 19,
+            "benchmarkLevel": 1,
+            "batteryLevel": 100,
+            "statusBarHeight": 20,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 20,
+                "left": 0,
+                "right": 414,
+                "bottom": 736,
+                "width": 414,
+                "height": 716
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 3,
+            "host": {
+                "env": "WeChat"
+            },
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "",
+    "error_value": "",
+    "error_stages": [],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/pages/account/mode",
+            "path": "images\\setup.png",
+            "ts": 1689903596,
+            "datetime": "2023-07-21 09:39:56"
+        },
+        {
+            "name": "teardown",
+            "url": "/pages/assess/assessBaseInfo",
+            "path": "images\\teardown.png",
+            "ts": 1689903600,
+            "datetime": "2023-07-21 09:40:00"
+        }
+    ],
+    "step_info": [],
+    "check_list": [],
+    "assert_list": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1689903600.335545,
+    "appId": "",
+    "appName": "",
+    "source": {
+        "code": [
+            "    def test_01(self):\n",
+            "\n",
+            "        self.app.redirect_to(\"/pages/assess/assessBaseInfo\")\n",
+            "        self.page.wait_for(2)\t\t\t\t# \u5f53\u524d\u9875\u9762\u7b49\u5f852s\n",
+            "        #self.page.get_elements(\"van-field\")[1].get_element(\"van-cell\").get_element(\"view\").get_element(\"view\").tap()\n",
+            "        self.page.wait_for(1)\n",
+            "        self.page.get_elements(\"van-radio-group\")[0].get_elements(\"van-radio\")[1].get_element(\"view\").get_element(\"van-icon\").get_element(\"view\").tap()\n",
+            "\n",
+            "        self.page.get_element(\"van-tabs\").get_element(\"view\").get_element(\"van-sticky\").get_element(\"view\").get_element(\"scroll-view\").get_element(\"view\").get_elements(\"view\")[1].tap()\n"
+        ],
+        "start": 24
+    },
+    "filename": "result.json"
+}

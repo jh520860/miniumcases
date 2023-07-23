@@ -1,0 +1,13 @@
+INFO  2023-07-21 13:38:17,489 minitest.py _miniSetUp      340 =========Current case: test_01=========
+INFO  2023-07-21 13:38:17,491 minitest.py _miniSetUp      343 package info: E:.workspace.miniumcase.test.first_test, case info: FirstTest.test_01
+INFO  2023-07-21 13:38:17,492 basenative.py wrapper         24  call BaseNative.check_connection
+INFO  2023-07-21 13:38:17,501 basenative.py wrapper         28  call BaseNative.check_connection end
+INFO  2023-07-21 13:38:17,504 basenative.py wrapper         24  call BaseNative.back_to_miniprogram
+INFO  2023-07-21 13:38:17,506 basenative.py back_to_miniprogram 549 try back_to_miniprogram 3
+INFO  2023-07-21 13:38:17,507 basenative.py wrapper         28  call BaseNative.back_to_miniprogram end
+INFO  2023-07-21 13:38:17,512 app.py     relaunch        623 ReLaunch: /pages/account/mode
+DEBUG 2023-07-21 13:38:17,514 connection.py _safely_send    417 ASYNC_SEND > {"id":"4e10f8ac-f1cb-4b82-8906-05cdb33b8f06","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/account/mode"}]}}
+DEBUG 2023-07-21 13:38:17,608 connection.py _on_message     652 RECV < {"id":"4e10f8ac-f1cb-4b82-8906-05cdb33b8f06","result":{"result":{"errMsg":"reLaunch:ok"}}}
+INFO  2023-07-21 13:38:17,610 connection.py _handle_async_msg 693 received async msg: 4e10f8ac-f1cb-4b82-8906-05cdb33b8f06
+DEBUG 2023-07-21 13:38:18,549 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":394,"path":"pages/account/mode","query":{},"openType":"reLaunch","__ts__":1689917898522},1689917898525]}}
+INFO  2023-07-21 13:38:18,552 app.py     _on_route_changed 845 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 394, 'path': 'pages/account/mode', 'query': {}, 'openType': 'reLaunch', '__ts__': 1689917898522}, 1689917898525]}
